@@ -1,0 +1,14 @@
+\\iut\etudiants\home\coroblin\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Acceuil.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.NouvelleFacture.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connexion.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connecte.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\PTOuatelse.exe.config

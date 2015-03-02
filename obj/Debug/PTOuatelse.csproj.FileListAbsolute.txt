@@ -1,0 +1,13 @@
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\PTOuatelse.exe.config
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\PTOuatelse.exe
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\bin\Debug\PTOuatelse.pdb
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Acceuil.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connexion.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Connecte.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.NouvelleFacture.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.Properties.Resources.resources
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.exe
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.pdb
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.EchecConnexion.resources
