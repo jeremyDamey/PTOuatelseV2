@@ -50,12 +50,24 @@
             this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Mail = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Détails = new System.Windows.Forms.TabControl();
+            this.Factures = new System.Windows.Forms.TabPage();
+            this.Statistiques = new System.Windows.Forms.TabPage();
             this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Produits = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix_HT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix_TTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Achats = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fréquence = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Notes = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Détails.SuspendLayout();
+            this.Factures.SuspendLayout();
+            this.Statistiques.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -234,40 +246,116 @@
             this.Produits,
             this.Prix_HT,
             this.Prix_TTC});
-            this.dataGridView1.Location = new System.Drawing.Point(182, 333);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(519, 83);
+            this.dataGridView1.Size = new System.Drawing.Size(789, 175);
             this.dataGridView1.TabIndex = 21;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Détails
+            // 
+            this.Détails.Controls.Add(this.Factures);
+            this.Détails.Controls.Add(this.Statistiques);
+            this.Détails.Controls.Add(this.Notes);
+            this.Détails.Location = new System.Drawing.Point(38, 313);
+            this.Détails.Name = "Détails";
+            this.Détails.SelectedIndex = 0;
+            this.Détails.Size = new System.Drawing.Size(803, 207);
+            this.Détails.TabIndex = 22;
+            // 
+            // Factures
+            // 
+            this.Factures.Controls.Add(this.dataGridView1);
+            this.Factures.Location = new System.Drawing.Point(4, 22);
+            this.Factures.Name = "Factures";
+            this.Factures.Padding = new System.Windows.Forms.Padding(3);
+            this.Factures.Size = new System.Drawing.Size(795, 181);
+            this.Factures.TabIndex = 0;
+            this.Factures.Text = "Factures";
+            this.Factures.UseVisualStyleBackColor = true;
+            // 
+            // Statistiques
+            // 
+            this.Statistiques.Controls.Add(this.dataGridView2);
+            this.Statistiques.Location = new System.Drawing.Point(4, 22);
+            this.Statistiques.Name = "Statistiques";
+            this.Statistiques.Padding = new System.Windows.Forms.Padding(3);
+            this.Statistiques.Size = new System.Drawing.Size(795, 181);
+            this.Statistiques.TabIndex = 1;
+            this.Statistiques.Text = "Statistiques";
+            this.Statistiques.UseVisualStyleBackColor = true;
             // 
             // Ref
             // 
             this.Ref.HeaderText = "Ref";
             this.Ref.Name = "Ref";
-            this.Ref.Width = 75;
             // 
             // Produits
             // 
             this.Produits.HeaderText = "Produits";
             this.Produits.Name = "Produits";
-            this.Produits.Width = 200;
+            this.Produits.Width = 300;
             // 
             // Prix_HT
             // 
             this.Prix_HT.HeaderText = "Prix_HT";
             this.Prix_HT.Name = "Prix_HT";
+            this.Prix_HT.Width = 175;
             // 
             // Prix_TTC
             // 
             this.Prix_TTC.HeaderText = "Prix_TTC";
             this.Prix_TTC.Name = "Prix_TTC";
+            this.Prix_TTC.Width = 175;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Produit,
+            this.Nombre_Achats,
+            this.Fréquence});
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(789, 175);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // Produit
+            // 
+            this.Produit.HeaderText = "Produits";
+            this.Produit.Name = "Produit";
+            this.Produit.Width = 400;
+            // 
+            // Nombre_Achats
+            // 
+            this.Nombre_Achats.HeaderText = "Nombre Achats";
+            this.Nombre_Achats.Name = "Nombre_Achats";
+            this.Nombre_Achats.Width = 175;
+            // 
+            // Fréquence
+            // 
+            this.Fréquence.HeaderText = "Fréquence";
+            this.Fréquence.Name = "Fréquence";
+            this.Fréquence.Width = 175;
+            // 
+            // Notes
+            // 
+            this.Notes.Location = new System.Drawing.Point(4, 22);
+            this.Notes.Name = "Notes";
+            this.Notes.Padding = new System.Windows.Forms.Padding(3);
+            this.Notes.Size = new System.Drawing.Size(795, 181);
+            this.Notes.TabIndex = 2;
+            this.Notes.Text = "Notes";
+            this.Notes.UseVisualStyleBackColor = true;
             // 
             // DétailsClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 532);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Détails);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
@@ -293,6 +381,10 @@
             this.Text = "DétailsClients";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Détails.ResumeLayout(false);
+            this.Factures.ResumeLayout(false);
+            this.Statistiques.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +418,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Produits;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prix_HT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prix_TTC;
+        private System.Windows.Forms.TabControl Détails;
+        private System.Windows.Forms.TabPage Factures;
+        private System.Windows.Forms.TabPage Statistiques;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Produit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Achats;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fréquence;
+        private System.Windows.Forms.TabPage Notes;
     }
 }
