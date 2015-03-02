@@ -16,5 +16,17 @@ namespace PTOuatelse
         {
             InitializeComponent();
         }
+
+        private void NouveauSalarie_Click(object sender, EventArgs e)
+        {
+            NouveauSalarie nouveau = new NouveauSalarie();
+            nouveau.Show();
+        }
+
+        private void modifierSalarie_Click(object sender, EventArgs e)
+        {
+            ModifierSalarié modifier = new ModifierSalarié();
+            modifier.Show();
+        }
     }
 }
