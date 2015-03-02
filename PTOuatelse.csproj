@@ -81,6 +81,12 @@
     <Compile Include="Connecte.Designer.cs">
       <DependentUpon>Connecte.cs</DependentUpon>
     </Compile>
+    <Compile Include="DétailsClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DétailsClients.Designer.cs">
+      <DependentUpon>DétailsClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="EchecConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Connecte.resx">
       <DependentUpon>Connecte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DétailsClients.resx">
+      <DependentUpon>DétailsClients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EchecConnexion.resx">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
