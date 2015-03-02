@@ -82,6 +82,12 @@
     <Compile Include="Connecte.Designer.cs">
       <DependentUpon>Connecte.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestionSalarie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSalarie.Designer.cs">
+      <DependentUpon>GestionSalarie.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModifierClient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Connecte.resx">
       <DependentUpon>Connecte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSalarie.resx">
+      <DependentUpon>GestionSalarie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifierClient.resx">
       <DependentUpon>ModifierClient.cs</DependentUpon>
