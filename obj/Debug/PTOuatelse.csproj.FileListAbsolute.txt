@@ -45,3 +45,4 @@ C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.GestionC
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.NouvelleFacture.resources
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.GestionSalarie.resources
