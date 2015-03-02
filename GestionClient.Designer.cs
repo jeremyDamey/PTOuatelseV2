@@ -1,6 +1,6 @@
 ﻿namespace PTOuatelse
 {
-    partial class gestionDesClients
+    partial class GestionClients
     {
         /// <summary>
         /// Required designer variable.
@@ -30,16 +30,16 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.nouveauProduit = new System.Windows.Forms.Button();
+            this.NouveauClient = new System.Windows.Forms.Button();
             this.modifierClient = new System.Windows.Forms.Button();
             this.supprimerClient = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rechercher = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rechercher = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -61,14 +61,15 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Gestion des Clients";
             // 
-            // nouveauProduit
+            // NouveauClient
             // 
-            this.nouveauProduit.Location = new System.Drawing.Point(37, 102);
-            this.nouveauProduit.Name = "nouveauProduit";
-            this.nouveauProduit.Size = new System.Drawing.Size(100, 23);
-            this.nouveauProduit.TabIndex = 2;
-            this.nouveauProduit.Text = "Nouveau Produit";
-            this.nouveauProduit.UseVisualStyleBackColor = true;
+            this.NouveauClient.Location = new System.Drawing.Point(37, 102);
+            this.NouveauClient.Name = "NouveauClient";
+            this.NouveauClient.Size = new System.Drawing.Size(100, 23);
+            this.NouveauClient.TabIndex = 2;
+            this.NouveauClient.Text = "Nouveau Client";
+            this.NouveauClient.UseVisualStyleBackColor = true;
+            this.NouveauClient.Click += new System.EventHandler(this.NouveauClient_Click);
             // 
             // modifierClient
             // 
@@ -78,6 +79,7 @@
             this.modifierClient.TabIndex = 3;
             this.modifierClient.Text = "Modifier Client";
             this.modifierClient.UseVisualStyleBackColor = true;
+            this.modifierClient.Click += new System.EventHandler(this.modifierClient_Click);
             // 
             // supprimerClient
             // 
@@ -100,22 +102,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(838, 231);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // rechercher
-            // 
-            this.rechercher.Location = new System.Drawing.Point(652, 102);
-            this.rechercher.Name = "rechercher";
-            this.rechercher.Size = new System.Drawing.Size(100, 20);
-            this.rechercher.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(758, 102);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Rechercher";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Ref
             // 
@@ -141,7 +127,23 @@
             this.ville.Name = "ville";
             this.ville.Width = 200;
             // 
-            // gestionDesClients
+            // rechercher
+            // 
+            this.rechercher.Location = new System.Drawing.Point(652, 102);
+            this.rechercher.Name = "rechercher";
+            this.rechercher.Size = new System.Drawing.Size(100, 20);
+            this.rechercher.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(758, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Rechercher";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // GestionClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,11 +153,12 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.supprimerClient);
             this.Controls.Add(this.modifierClient);
-            this.Controls.Add(this.nouveauProduit);
+            this.Controls.Add(this.NouveauClient);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "gestionDesClients";
+            this.Name = "GestionClients";
             this.Text = "Gestion des Clients";
+            this.Load += new System.EventHandler(this.GestionClients_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -167,7 +170,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button nouveauProduit;
+        private System.Windows.Forms.Button NouveauClient;
         private System.Windows.Forms.Button modifierClient;
         private System.Windows.Forms.Button supprimerClient;
         private System.Windows.Forms.DataGridView dataGridView1;

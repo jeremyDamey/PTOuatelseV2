@@ -1,6 +1,6 @@
 ﻿namespace PTOuatelse
 {
-    partial class DétailsClients
+    partial class NouveauClient
     {
         /// <summary>
         /// Required designer variable.
@@ -262,7 +262,7 @@
             this.Prix_TTC.HeaderText = "Prix_TTC";
             this.Prix_TTC.Name = "Prix_TTC";
             // 
-            // DétailsClients
+            // NouveauClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -289,8 +289,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "DétailsClients";
-            this.Text = "DétailsClients";
+            this.Name = "NouveauClient";
+            this.Text = "Nouveau Client";
+            this.Load += new System.EventHandler(this.NouveauClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
