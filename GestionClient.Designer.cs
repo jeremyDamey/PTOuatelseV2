@@ -36,6 +36,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.rechercher = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -87,6 +91,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ref,
+            this.nom,
+            this.adresse,
+            this.ville});
             this.dataGridView1.Location = new System.Drawing.Point(12, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(838, 231);
@@ -107,6 +116,30 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Rechercher";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Ref
+            // 
+            this.Ref.HeaderText = "Ref";
+            this.Ref.Name = "Ref";
+            this.Ref.Width = 195;
+            // 
+            // nom
+            // 
+            this.nom.HeaderText = "Nom";
+            this.nom.Name = "nom";
+            this.nom.Width = 200;
+            // 
+            // adresse
+            // 
+            this.adresse.HeaderText = "Adresse";
+            this.adresse.Name = "adresse";
+            this.adresse.Width = 200;
+            // 
+            // ville
+            // 
+            this.ville.HeaderText = "Ville";
+            this.ville.Name = "ville";
+            this.ville.Width = 200;
             // 
             // gestionDesClients
             // 
@@ -140,5 +173,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox rechercher;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ref;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adresse;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ville;
     }
 }
