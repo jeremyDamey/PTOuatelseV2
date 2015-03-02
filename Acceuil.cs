@@ -43,8 +43,8 @@ namespace WindowsFormsApplication1
 
         private void SalarieButton_Click(object sender, EventArgs e)
         {
-            GestionSalarie salarié = new GestionSalarie();
-            salarié.Show();
+            PTOuatelse.GestionSalarie salarie = new PTOuatelse.GestionSalarie();
+            salarie.Show();
         }
 
         private void AssistanceButton_Click(object sender, EventArgs e)

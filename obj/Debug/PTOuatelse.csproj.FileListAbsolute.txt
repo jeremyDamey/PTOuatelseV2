@@ -46,3 +46,5 @@ C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplica
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.GestionSalarie.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.ModifierSalarié.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.NouveauSalarie.resources
