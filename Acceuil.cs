@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PTOuatelse;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,8 @@ namespace WindowsFormsApplication1
 
         private void ClientButton_Click(object sender, EventArgs e)
         {
-
+            GestionClients client = new GestionClients();
+            client.Show();
         }
 
         private void SalarieButton_Click(object sender, EventArgs e)

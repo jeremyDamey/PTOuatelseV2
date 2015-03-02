@@ -82,17 +82,29 @@
     <Compile Include="Connecte.Designer.cs">
       <DependentUpon>Connecte.cs</DependentUpon>
     </Compile>
-    <Compile Include="DétailsClients.cs">
+    <Compile Include="ModifierClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DétailsClients.Designer.cs">
-      <DependentUpon>DétailsClients.cs</DependentUpon>
+    <Compile Include="ModifierClient.Designer.cs">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NouveauClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NouveauClient.Designer.cs">
+      <DependentUpon>NouveauClient.cs</DependentUpon>
     </Compile>
     <Compile Include="EchecConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EchecConnexion.Designer.cs">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionStock.Designer.cs">
+      <DependentUpon>GestionStock.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionClient.cs">
       <SubType>Form</SubType>
@@ -117,11 +129,17 @@
     <EmbeddedResource Include="Connecte.resx">
       <DependentUpon>Connecte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DétailsClients.resx">
-      <DependentUpon>DétailsClients.cs</DependentUpon>
+    <EmbeddedResource Include="ModifierClient.resx">
+      <DependentUpon>ModifierClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NouveauClient.resx">
+      <DependentUpon>NouveauClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EchecConnexion.resx">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionStock.resx">
+      <DependentUpon>GestionStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GestionClient.resx">
       <DependentUpon>GestionClient.cs</DependentUpon>

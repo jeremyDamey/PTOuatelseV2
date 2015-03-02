@@ -63,6 +63,11 @@
             this.HT = new System.Windows.Forms.TextBox();
             this.TVA = new System.Windows.Forms.TextBox();
             this.TTC = new System.Windows.Forms.TextBox();
+            this.RefFacture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixHTunite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixHT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -296,9 +301,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RefFacture,
+            this.produit,
+            this.quantite,
+            this.prixHTunite,
+            this.prixHT});
             this.dataGridView1.Location = new System.Drawing.Point(8, 185);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(854, 285);
+            this.dataGridView1.Size = new System.Drawing.Size(864, 285);
             this.dataGridView1.TabIndex = 26;
             // 
             // label
@@ -364,6 +375,36 @@
             this.TTC.Name = "TTC";
             this.TTC.Size = new System.Drawing.Size(100, 20);
             this.TTC.TabIndex = 34;
+            // 
+            // RefFacture
+            // 
+            this.RefFacture.HeaderText = "Ref";
+            this.RefFacture.Name = "RefFacture";
+            this.RefFacture.Width = 160;
+            // 
+            // produit
+            // 
+            this.produit.HeaderText = "Produit";
+            this.produit.Name = "produit";
+            this.produit.Width = 170;
+            // 
+            // quantite
+            // 
+            this.quantite.HeaderText = "Qte";
+            this.quantite.Name = "quantite";
+            this.quantite.Width = 150;
+            // 
+            // prixHTunite
+            // 
+            this.prixHTunite.HeaderText = "Prix HT Unit.";
+            this.prixHTunite.Name = "prixHTunite";
+            this.prixHTunite.Width = 170;
+            // 
+            // prixHT
+            // 
+            this.prixHT.HeaderText = "Prix HT";
+            this.prixHT.Name = "prixHT";
+            this.prixHT.Width = 170;
             // 
             // NouvelleFacture
             // 
@@ -444,5 +485,10 @@
         private System.Windows.Forms.TextBox HT;
         private System.Windows.Forms.TextBox TVA;
         private System.Windows.Forms.TextBox TTC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RefFacture;
+        private System.Windows.Forms.DataGridViewTextBoxColumn produit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prixHTunite;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prixHT;
     }
 }
