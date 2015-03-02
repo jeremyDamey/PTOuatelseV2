@@ -99,6 +99,7 @@
             this.modifierSalarie.TabIndex = 11;
             this.modifierSalarie.Text = "Modifier Salarié";
             this.modifierSalarie.UseVisualStyleBackColor = true;
+            this.modifierSalarie.Click += new System.EventHandler(this.modifierSalarie_Click);
             // 
             // NouveauSalarie
             // 
@@ -108,6 +109,7 @@
             this.NouveauSalarie.TabIndex = 10;
             this.NouveauSalarie.Text = "Nouveau Salarié";
             this.NouveauSalarie.UseVisualStyleBackColor = true;
+            this.NouveauSalarie.Click += new System.EventHandler(this.NouveauSalarie_Click);
             // 
             // label1
             // 
@@ -158,7 +160,7 @@
             this.Controls.Add(this.recherche);
             this.Controls.Add(this.rechercher);
             this.Name = "GestionSalarie";
-            this.Text = "GestionSalarie";
+            this.Text = "Gestion Salarié";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
