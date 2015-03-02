@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logoBox = new System.Windows.Forms.PictureBox();
             this.IdentifiantBox = new System.Windows.Forms.TextBox();
             this.MDPBox = new System.Windows.Forms.TextBox();
             this.ConnectionButton = new System.Windows.Forms.Button();
             this.AnnulerButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // logoBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(124, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.logoBox.Location = new System.Drawing.Point(124, 42);
+            this.logoBox.Name = "logoBox";
+            this.logoBox.Size = new System.Drawing.Size(100, 96);
+            this.logoBox.TabIndex = 0;
+            this.logoBox.TabStop = false;
+            this.logoBox.Click += new System.EventHandler(this.logoBox_Click);
             // 
             // IdentifiantBox
             // 
@@ -89,11 +90,11 @@
             this.Controls.Add(this.ConnectionButton);
             this.Controls.Add(this.MDPBox);
             this.Controls.Add(this.IdentifiantBox);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.logoBox);
             this.Name = "Connexion";
             this.Text = "Connexion";
             this.Load += new System.EventHandler(this.Connexion_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,7 +102,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logoBox;
         private System.Windows.Forms.Button ConnectionButton;
         private System.Windows.Forms.Button AnnulerButton;
         public System.Windows.Forms.TextBox IdentifiantBox;

@@ -33,3 +33,4 @@ C:\Users\jdamey\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.GestionClients.reso
 C:\Users\jdamey\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.NouvelleFacture.resources
 C:\Users\jdamey\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\jdamey\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
+C:\Users\jdamey\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.ModifierClient.resources

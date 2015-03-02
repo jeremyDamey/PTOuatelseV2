@@ -42,5 +42,10 @@ namespace WindowsFormsApplication1
             MDPBox.ResetText();
             IdentifiantBox.ResetText();
         }
+
+        private void logoBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
