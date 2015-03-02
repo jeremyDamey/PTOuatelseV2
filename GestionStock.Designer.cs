@@ -196,6 +196,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "GestionStock";
             this.Text = "Gestion du Stock";
+            this.Load += new System.EventHandler(this.GestionStock_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -56,5 +56,10 @@ namespace PTOuatelse
         {
 
         }
+
+        private void GestionStock_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
