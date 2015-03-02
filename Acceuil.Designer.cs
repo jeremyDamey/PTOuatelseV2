@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acceuil));
             this.FactureButton = new System.Windows.Forms.Button();
             this.ClientButton = new System.Windows.Forms.Button();
             this.SalarieButton = new System.Windows.Forms.Button();
@@ -110,9 +111,11 @@
             // 
             // Logo
             // 
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
             this.Logo.Location = new System.Drawing.Point(12, 14);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(168, 126);
+            this.Logo.Size = new System.Drawing.Size(135, 129);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Logo.TabIndex = 7;
             this.Logo.TabStop = false;
             // 
