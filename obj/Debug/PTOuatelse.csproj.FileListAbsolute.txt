@@ -11,3 +11,16 @@ C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.exe
 C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.pdb
 C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.csprojResolveAssemblyReference.cache
 C:\Users\Jeremy\Desktop\WindowsFormsApplication1\obj\Debug\PTOuatelse.EchecConnexion.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\bin\Debug\PTOuatelse.exe.config
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.exe
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.pdb
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\bin\Debug\PTOuatelse.exe
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\bin\Debug\PTOuatelse.pdb
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.csprojResolveAssemblyReference.cache
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.Acceuil.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.Connexion.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.Connecte.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.EchecConnexion.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\WindowsFormsApplication1.NouvelleFacture.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.Properties.Resources.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
