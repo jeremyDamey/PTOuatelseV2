@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NouvelleFacture));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,6 +56,11 @@
             this.aRendre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.RefFacture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixHTunite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prixHT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label = new System.Windows.Forms.Label();
             this.remise = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,11 +69,6 @@
             this.HT = new System.Windows.Forms.TextBox();
             this.TVA = new System.Windows.Forms.TextBox();
             this.TTC = new System.Windows.Forms.TextBox();
-            this.RefFacture = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prixHTunite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prixHT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,9 +76,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(8, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(102, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -312,6 +315,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(864, 285);
             this.dataGridView1.TabIndex = 26;
             // 
+            // RefFacture
+            // 
+            this.RefFacture.HeaderText = "Ref";
+            this.RefFacture.Name = "RefFacture";
+            this.RefFacture.Width = 160;
+            // 
+            // produit
+            // 
+            this.produit.HeaderText = "Produit";
+            this.produit.Name = "produit";
+            this.produit.Width = 170;
+            // 
+            // quantite
+            // 
+            this.quantite.HeaderText = "Qte";
+            this.quantite.Name = "quantite";
+            this.quantite.Width = 150;
+            // 
+            // prixHTunite
+            // 
+            this.prixHTunite.HeaderText = "Prix HT Unit.";
+            this.prixHTunite.Name = "prixHTunite";
+            this.prixHTunite.Width = 170;
+            // 
+            // prixHT
+            // 
+            this.prixHT.HeaderText = "Prix HT";
+            this.prixHT.Name = "prixHT";
+            this.prixHT.Width = 170;
+            // 
             // label
             // 
             this.label.AutoSize = true;
@@ -375,36 +408,6 @@
             this.TTC.Name = "TTC";
             this.TTC.Size = new System.Drawing.Size(100, 20);
             this.TTC.TabIndex = 34;
-            // 
-            // RefFacture
-            // 
-            this.RefFacture.HeaderText = "Ref";
-            this.RefFacture.Name = "RefFacture";
-            this.RefFacture.Width = 160;
-            // 
-            // produit
-            // 
-            this.produit.HeaderText = "Produit";
-            this.produit.Name = "produit";
-            this.produit.Width = 170;
-            // 
-            // quantite
-            // 
-            this.quantite.HeaderText = "Qte";
-            this.quantite.Name = "quantite";
-            this.quantite.Width = 150;
-            // 
-            // prixHTunite
-            // 
-            this.prixHTunite.HeaderText = "Prix HT Unit.";
-            this.prixHTunite.Name = "prixHTunite";
-            this.prixHTunite.Width = 170;
-            // 
-            // prixHT
-            // 
-            this.prixHT.HeaderText = "Prix HT";
-            this.prixHT.Name = "prixHT";
-            this.prixHT.Width = 170;
             // 
             // NouvelleFacture
             // 
