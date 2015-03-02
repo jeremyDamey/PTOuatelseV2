@@ -32,31 +32,40 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.date = new System.Windows.Forms.TextBox();
+            this.reference = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.codeClient = new System.Windows.Forms.TextBox();
+            this.nomPrenomClient = new System.Windows.Forms.TextBox();
+            this.adresse = new System.Windows.Forms.TextBox();
+            this.adresse2 = new System.Windows.Forms.TextBox();
+            this.codePostal = new System.Windows.Forms.TextBox();
+            this.ville = new System.Windows.Forms.TextBox();
+            this.pays = new System.Windows.Forms.TextBox();
+            this.rechercheProduit = new System.Windows.Forms.TextBox();
+            this.RechercherProduit = new System.Windows.Forms.Button();
+            this.ReglerLaFacture = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.moyenDePaiement = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.aRegler = new System.Windows.Forms.TextBox();
+            this.regle = new System.Windows.Forms.TextBox();
+            this.aRendre = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label = new System.Windows.Forms.Label();
+            this.remise = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.HT = new System.Windows.Forms.TextBox();
+            this.TVA = new System.Windows.Forms.TextBox();
+            this.TTC = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -75,7 +84,6 @@
             this.label1.Size = new System.Drawing.Size(88, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nouvelle Facture";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -95,20 +103,19 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Date : ";
             // 
-            // textBox1
+            // date
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 96);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.date.Location = new System.Drawing.Point(157, 96);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(100, 20);
+            this.date.TabIndex = 4;
             // 
-            // textBox2
+            // reference
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 70);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.reference.Location = new System.Drawing.Point(157, 70);
+            this.reference.Name = "reference";
+            this.reference.Size = new System.Drawing.Size(100, 20);
+            this.reference.TabIndex = 5;
             // 
             // label4
             // 
@@ -120,109 +127,88 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Client : ";
             // 
-            // textBox3
+            // codeClient
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(631, 48);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 20);
-            this.textBox3.TabIndex = 7;
+            this.codeClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.codeClient.Location = new System.Drawing.Point(631, 48);
+            this.codeClient.Name = "codeClient";
+            this.codeClient.Size = new System.Drawing.Size(45, 20);
+            this.codeClient.TabIndex = 7;
             // 
-            // textBox4
+            // nomPrenomClient
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(682, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(164, 20);
-            this.textBox4.TabIndex = 8;
+            this.nomPrenomClient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.nomPrenomClient.Location = new System.Drawing.Point(682, 47);
+            this.nomPrenomClient.Name = "nomPrenomClient";
+            this.nomPrenomClient.Size = new System.Drawing.Size(164, 20);
+            this.nomPrenomClient.TabIndex = 8;
             // 
-            // textBox5
+            // adresse
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(631, 73);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(215, 20);
-            this.textBox5.TabIndex = 9;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.adresse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.adresse.Location = new System.Drawing.Point(631, 73);
+            this.adresse.Name = "adresse";
+            this.adresse.Size = new System.Drawing.Size(215, 20);
+            this.adresse.TabIndex = 9;
             // 
-            // textBox6
+            // adresse2
             // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Location = new System.Drawing.Point(631, 99);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(215, 20);
-            this.textBox6.TabIndex = 10;
+            this.adresse2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.adresse2.Location = new System.Drawing.Point(631, 99);
+            this.adresse2.Name = "adresse2";
+            this.adresse2.Size = new System.Drawing.Size(215, 20);
+            this.adresse2.TabIndex = 10;
             // 
-            // textBox7
+            // codePostal
             // 
-            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox7.Location = new System.Drawing.Point(631, 125);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(45, 20);
-            this.textBox7.TabIndex = 11;
+            this.codePostal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.codePostal.Location = new System.Drawing.Point(631, 125);
+            this.codePostal.Name = "codePostal";
+            this.codePostal.Size = new System.Drawing.Size(45, 20);
+            this.codePostal.TabIndex = 11;
             // 
-            // textBox8
+            // ville
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Location = new System.Drawing.Point(682, 125);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 12;
+            this.ville.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ville.Location = new System.Drawing.Point(682, 125);
+            this.ville.Name = "ville";
+            this.ville.Size = new System.Drawing.Size(100, 20);
+            this.ville.TabIndex = 12;
             // 
-            // textBox9
+            // pays
             // 
-            this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox9.Location = new System.Drawing.Point(788, 125);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(58, 20);
-            this.textBox9.TabIndex = 13;
+            this.pays.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pays.Location = new System.Drawing.Point(788, 125);
+            this.pays.Name = "pays";
+            this.pays.Size = new System.Drawing.Size(58, 20);
+            this.pays.TabIndex = 13;
             // 
-            // tableLayoutPanel1
+            // rechercheProduit
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.62865F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.37135F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 167);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.58242F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.41758F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(850, 305);
-            this.tableLayoutPanel1.TabIndex = 14;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.rechercheProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.rechercheProduit.Location = new System.Drawing.Point(21, 478);
+            this.rechercheProduit.Name = "rechercheProduit";
+            this.rechercheProduit.Size = new System.Drawing.Size(100, 20);
+            this.rechercheProduit.TabIndex = 15;
             // 
-            // textBox10
+            // RechercherProduit
             // 
-            this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox10.Location = new System.Drawing.Point(21, 478);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 15;
+            this.RechercherProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.RechercherProduit.Location = new System.Drawing.Point(127, 476);
+            this.RechercherProduit.Name = "RechercherProduit";
+            this.RechercherProduit.Size = new System.Drawing.Size(107, 23);
+            this.RechercherProduit.TabIndex = 16;
+            this.RechercherProduit.Text = "Recherche Produit";
+            this.RechercherProduit.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // ReglerLaFacture
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(127, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Recherche Produit";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(520, 27);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 48);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Régler la facture";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ReglerLaFacture.Location = new System.Drawing.Point(520, 27);
+            this.ReglerLaFacture.Name = "ReglerLaFacture";
+            this.ReglerLaFacture.Size = new System.Drawing.Size(87, 48);
+            this.ReglerLaFacture.TabIndex = 17;
+            this.ReglerLaFacture.Text = "Régler la facture";
+            this.ReglerLaFacture.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -233,14 +219,13 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Moyen de Paiement : ";
             // 
-            // comboBox1
+            // moyenDePaiement
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(9, 61);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(123, 21);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.moyenDePaiement.FormattingEnabled = true;
+            this.moyenDePaiement.Location = new System.Drawing.Point(9, 61);
+            this.moyenDePaiement.Name = "moyenDePaiement";
+            this.moyenDePaiement.Size = new System.Drawing.Size(123, 21);
+            this.moyenDePaiement.TabIndex = 0;
             // 
             // label7
             // 
@@ -268,38 +253,37 @@
             this.label9.Size = new System.Drawing.Size(53, 13);
             this.label9.TabIndex = 22;
             this.label9.Text = "A rendre :";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // textBox11
+            // aRegler
             // 
-            this.textBox11.Location = new System.Drawing.Point(343, 13);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(85, 20);
-            this.textBox11.TabIndex = 23;
+            this.aRegler.Location = new System.Drawing.Point(343, 13);
+            this.aRegler.Name = "aRegler";
+            this.aRegler.Size = new System.Drawing.Size(85, 20);
+            this.aRegler.TabIndex = 23;
             // 
-            // textBox12
+            // regle
             // 
-            this.textBox12.Location = new System.Drawing.Point(343, 42);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(85, 20);
-            this.textBox12.TabIndex = 24;
+            this.regle.Location = new System.Drawing.Point(343, 42);
+            this.regle.Name = "regle";
+            this.regle.Size = new System.Drawing.Size(85, 20);
+            this.regle.TabIndex = 24;
             // 
-            // textBox13
+            // aRendre
             // 
-            this.textBox13.Location = new System.Drawing.Point(343, 66);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(85, 20);
-            this.textBox13.TabIndex = 25;
+            this.aRendre.Location = new System.Drawing.Point(343, 66);
+            this.aRendre.Name = "aRendre";
+            this.aRendre.Size = new System.Drawing.Size(85, 20);
+            this.aRendre.TabIndex = 25;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.aRendre);
+            this.groupBox1.Controls.Add(this.ReglerLaFacture);
+            this.groupBox1.Controls.Add(this.moyenDePaiement);
+            this.groupBox1.Controls.Add(this.regle);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.aRegler);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Location = new System.Drawing.Point(12, 505);
@@ -309,35 +293,115 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Paiement";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(8, 185);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(854, 285);
+            this.dataGridView1.TabIndex = 26;
+            // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Location = new System.Drawing.Point(679, 490);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(51, 13);
+            this.label.TabIndex = 27;
+            this.label.Text = "Remise : ";
+            // 
+            // remise
+            // 
+            this.remise.Location = new System.Drawing.Point(736, 487);
+            this.remise.Name = "remise";
+            this.remise.Size = new System.Drawing.Size(100, 20);
+            this.remise.TabIndex = 28;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(679, 547);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "TVA :";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(679, 518);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(55, 13);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Total HT :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(679, 574);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "Total TTC :";
+            // 
+            // HT
+            // 
+            this.HT.Location = new System.Drawing.Point(736, 515);
+            this.HT.Name = "HT";
+            this.HT.Size = new System.Drawing.Size(100, 20);
+            this.HT.TabIndex = 32;
+            // 
+            // TVA
+            // 
+            this.TVA.Location = new System.Drawing.Point(736, 544);
+            this.TVA.Name = "TVA";
+            this.TVA.Size = new System.Drawing.Size(100, 20);
+            this.TVA.TabIndex = 33;
+            // 
+            // TTC
+            // 
+            this.TTC.Location = new System.Drawing.Point(736, 571);
+            this.TTC.Name = "TTC";
+            this.TTC.Size = new System.Drawing.Size(100, 20);
+            this.TTC.TabIndex = 34;
+            // 
             // NouvelleFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 626);
+            this.Controls.Add(this.TTC);
+            this.Controls.Add(this.TVA);
+            this.Controls.Add(this.HT);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.remise);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.RechercherProduit);
+            this.Controls.Add(this.rechercheProduit);
+            this.Controls.Add(this.pays);
+            this.Controls.Add(this.ville);
+            this.Controls.Add(this.codePostal);
+            this.Controls.Add(this.adresse2);
+            this.Controls.Add(this.adresse);
+            this.Controls.Add(this.nomPrenomClient);
+            this.Controls.Add(this.codeClient);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.reference);
+            this.Controls.Add(this.date);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NouvelleFacture";
             this.Text = "Nouvelle Facture";
-            this.Load += new System.EventHandler(this.NouvelleFacture_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -349,28 +413,36 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox date;
+        private System.Windows.Forms.TextBox reference;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox codeClient;
+        private System.Windows.Forms.TextBox nomPrenomClient;
+        private System.Windows.Forms.TextBox adresse;
+        private System.Windows.Forms.TextBox adresse2;
+        private System.Windows.Forms.TextBox codePostal;
+        private System.Windows.Forms.TextBox ville;
+        private System.Windows.Forms.TextBox pays;
+        private System.Windows.Forms.TextBox rechercheProduit;
+        private System.Windows.Forms.Button RechercherProduit;
+        private System.Windows.Forms.Button ReglerLaFacture;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox moyenDePaiement;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox aRegler;
+        private System.Windows.Forms.TextBox regle;
+        private System.Windows.Forms.TextBox aRendre;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.TextBox remise;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox HT;
+        private System.Windows.Forms.TextBox TVA;
+        private System.Windows.Forms.TextBox TTC;
     }
 }

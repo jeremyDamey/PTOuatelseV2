@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication1
+namespace PTOuatelse
 {
-    public partial class NouvelleFacture : Form
+    public partial class gestionDesClients : Form
     {
-        public NouvelleFacture()
+        public gestionDesClients()
         {
             InitializeComponent();
         }
-
     }
 }
