@@ -63,7 +63,6 @@
             this.Nombre_Achats = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fréquence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notes = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -353,21 +352,11 @@
             this.Notes.Text = "Notes";
             this.Notes.UseVisualStyleBackColor = true;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(592, 50);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 45;
-            this.label10.Text = "label10";
-            // 
             // ModifierClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 474);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
@@ -439,7 +428,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Achats;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fréquence;
         private System.Windows.Forms.TabPage Notes;
-        private System.Windows.Forms.Label label10;
 
     }
 }
