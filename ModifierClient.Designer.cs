@@ -181,6 +181,9 @@
             // Genre
             // 
             this.Genre.FormattingEnabled = true;
+            this.Genre.Items.AddRange(new object[] {
+            "M.",
+            "Mme"});
             this.Genre.Location = new System.Drawing.Point(475, 122);
             this.Genre.Name = "Genre";
             this.Genre.Size = new System.Drawing.Size(57, 21);
