@@ -53,7 +53,8 @@ namespace WindowsFormsApplication1
 
         private void ProduitBbutton_Click(object sender, EventArgs e)
         {
-
+            GestionStock produit = new GestionStock();
+            produit.Show();
         }
 
     }
