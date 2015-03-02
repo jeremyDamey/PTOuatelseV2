@@ -93,11 +93,11 @@
     <Compile Include="EchecConnexion.Designer.cs">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="GestionClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GestionClient.Designer.cs">
+      <DependentUpon>GestionClient.cs</DependentUpon>
     </Compile>
     <Compile Include="NouvelleFacture.cs">
       <SubType>Form</SubType>
@@ -122,8 +122,8 @@
     <EmbeddedResource Include="EchecConnexion.resx">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GestionClient.resx">
+      <DependentUpon>GestionClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NouvelleFacture.resx">
       <DependentUpon>NouvelleFacture.cs</DependentUpon>
