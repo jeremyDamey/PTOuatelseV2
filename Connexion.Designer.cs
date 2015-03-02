@@ -39,11 +39,10 @@
             // logoBox
             // 
             this.logoBox.Location = new System.Drawing.Point(124, 42);
-            this.logoBox.Name = "logoBox";
+            this.logoBox.Name = "pictureBox1";
             this.logoBox.Size = new System.Drawing.Size(100, 96);
             this.logoBox.TabIndex = 0;
             this.logoBox.TabStop = false;
-            this.logoBox.Click += new System.EventHandler(this.logoBox_Click);
             // 
             // IdentifiantBox
             // 
