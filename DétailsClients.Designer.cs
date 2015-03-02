@@ -49,7 +49,13 @@
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Mail = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Produits = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prix_HT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prix_TTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -220,11 +226,48 @@
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 20;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ref,
+            this.Produits,
+            this.Prix_HT,
+            this.Prix_TTC});
+            this.dataGridView1.Location = new System.Drawing.Point(182, 333);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(519, 83);
+            this.dataGridView1.TabIndex = 21;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Ref
+            // 
+            this.Ref.HeaderText = "Ref";
+            this.Ref.Name = "Ref";
+            this.Ref.Width = 75;
+            // 
+            // Produits
+            // 
+            this.Produits.HeaderText = "Produits";
+            this.Produits.Name = "Produits";
+            this.Produits.Width = 200;
+            // 
+            // Prix_HT
+            // 
+            this.Prix_HT.HeaderText = "Prix_HT";
+            this.Prix_HT.Name = "Prix_HT";
+            // 
+            // Prix_TTC
+            // 
+            this.Prix_TTC.HeaderText = "Prix_TTC";
+            this.Prix_TTC.Name = "Prix_TTC";
+            // 
             // DétailsClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 532);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
@@ -249,6 +292,7 @@
             this.Name = "DétailsClients";
             this.Text = "DétailsClients";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,5 +321,10 @@
         private System.Windows.Forms.TextBox Téléphone;
         private System.Windows.Forms.TextBox DateNaissance;
         private System.Windows.Forms.TextBox Mail;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ref;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Produits;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prix_HT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prix_TTC;
     }
 }
