@@ -250,7 +250,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Name = "NouveauSalarie";
-            this.Text = "NouveauSalarie";
+            this.Text = "Nouveau Salarié";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
