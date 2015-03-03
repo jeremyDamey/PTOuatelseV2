@@ -100,12 +100,6 @@
     <Compile Include="ModifierSalarié.Designer.cs">
       <DependentUpon>ModifierSalarié.cs</DependentUpon>
     </Compile>
-    <Compile Include="NouveauClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NouveauClient.Designer.cs">
-      <DependentUpon>NouveauClient.cs</DependentUpon>
-    </Compile>
     <Compile Include="EchecConnexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +117,12 @@
     </Compile>
     <Compile Include="GestionClient.Designer.cs">
       <DependentUpon>GestionClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NouveauClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NouveauClient.Designer.cs">
+      <DependentUpon>NouveauClient.cs</DependentUpon>
     </Compile>
     <Compile Include="NouveauSalarie.cs">
       <SubType>Form</SubType>
@@ -156,9 +156,6 @@
     <EmbeddedResource Include="ModifierSalarié.resx">
       <DependentUpon>ModifierSalarié.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NouveauClient.resx">
-      <DependentUpon>NouveauClient.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EchecConnexion.resx">
       <DependentUpon>EchecConnexion.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionClient.resx">
       <DependentUpon>GestionClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NouveauClient.resx">
+      <DependentUpon>NouveauClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NouveauSalarie.resx">
       <DependentUpon>NouveauSalarie.cs</DependentUpon>
