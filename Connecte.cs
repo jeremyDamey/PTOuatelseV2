@@ -27,6 +27,7 @@ namespace WindowsFormsApplication1
         {
             Acceuil acceuil = new Acceuil();
             acceuil.Show();
+            this.Hide();
         }
 
         private void Connecte_Load(object sender, EventArgs e)

@@ -44,12 +44,13 @@ namespace PTOuatelse
 
         private void rechercher_TextChanged(object sender, EventArgs e)
         {
-
+            if (rechercher.Text == "Rechercher...")
+                rechercher.Text = "";
         }
 
         private void recherche_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

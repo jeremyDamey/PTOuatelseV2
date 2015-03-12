@@ -25,7 +25,9 @@ namespace WindowsFormsApplication1
 
         private void DeconnexionButton_Click(object sender, EventArgs e)
         {
-
+            Connexion deconnexion = new Connexion();
+            deconnexion.Show();
+            this.Hide();
         }
 
         private void FactureButton_Click(object sender, EventArgs e)

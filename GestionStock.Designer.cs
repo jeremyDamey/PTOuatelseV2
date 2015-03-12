@@ -119,11 +119,14 @@
             // 
             // rechercher
             // 
+            this.rechercher.AccessibleName = "";
             this.rechercher.Location = new System.Drawing.Point(613, 76);
             this.rechercher.Name = "rechercher";
             this.rechercher.Size = new System.Drawing.Size(100, 20);
             this.rechercher.TabIndex = 7;
+            this.rechercher.Tag = "";
             this.rechercher.Text = "Rechercher...";
+            this.rechercher.WordWrap = false;
             this.rechercher.TextChanged += new System.EventHandler(this.rechercher_TextChanged);
             // 
             // recherche

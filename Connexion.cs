@@ -23,18 +23,19 @@ namespace WindowsFormsApplication1
         }
 
         private void ConnectionButton_Click(object sender, EventArgs e)
-        {
+        {            
             if (MDPBox.Text != "aa")
             {
-                PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();
+                PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();                
                 echec.Show();
+                this.Hide();                
             }
             else
             {
                 Connecte connection = new Connecte();
                 connection.Show();
-            }
-           
+                this.Hide();
+            }            
         }
 
         private void AnnulerButton_Click(object sender, EventArgs e)
@@ -46,6 +47,11 @@ namespace WindowsFormsApplication1
         private void logoBox_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void IdentifiantBox_TextChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(IdentifiantBox.Text);
         }
     }
 }

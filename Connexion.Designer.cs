@@ -54,6 +54,7 @@
             this.IdentifiantBox.Size = new System.Drawing.Size(100, 20);
             this.IdentifiantBox.TabIndex = 1;
             this.IdentifiantBox.Text = "identifiant";
+            this.IdentifiantBox.TextChanged += new System.EventHandler(this.IdentifiantBox_TextChanged);
             // 
             // MDPBox
             // 
