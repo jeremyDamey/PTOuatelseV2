@@ -69,6 +69,8 @@
             this.HT = new System.Windows.Forms.TextBox();
             this.TVA = new System.Windows.Forms.TextBox();
             this.TTC = new System.Windows.Forms.TextBox();
+            this.validerNouvelleFacture = new System.Windows.Forms.Button();
+            this.annulerNouvelleFacture = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -194,7 +196,7 @@
             // rechercheProduit
             // 
             this.rechercheProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.rechercheProduit.Location = new System.Drawing.Point(21, 478);
+            this.rechercheProduit.Location = new System.Drawing.Point(21, 503);
             this.rechercheProduit.Name = "rechercheProduit";
             this.rechercheProduit.Size = new System.Drawing.Size(100, 20);
             this.rechercheProduit.TabIndex = 15;
@@ -202,7 +204,7 @@
             // RechercherProduit
             // 
             this.RechercherProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RechercherProduit.Location = new System.Drawing.Point(127, 476);
+            this.RechercherProduit.Location = new System.Drawing.Point(127, 501);
             this.RechercherProduit.Name = "RechercherProduit";
             this.RechercherProduit.Size = new System.Drawing.Size(107, 23);
             this.RechercherProduit.TabIndex = 16;
@@ -409,11 +411,33 @@
             this.TTC.Size = new System.Drawing.Size(100, 20);
             this.TTC.TabIndex = 34;
             // 
+            // validerNouvelleFacture
+            // 
+            this.validerNouvelleFacture.Location = new System.Drawing.Point(299, 621);
+            this.validerNouvelleFacture.Name = "validerNouvelleFacture";
+            this.validerNouvelleFacture.Size = new System.Drawing.Size(75, 23);
+            this.validerNouvelleFacture.TabIndex = 35;
+            this.validerNouvelleFacture.Text = "Valider";
+            this.validerNouvelleFacture.UseVisualStyleBackColor = true;
+            this.validerNouvelleFacture.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // annulerNouvelleFacture
+            // 
+            this.annulerNouvelleFacture.Location = new System.Drawing.Point(473, 621);
+            this.annulerNouvelleFacture.Name = "annulerNouvelleFacture";
+            this.annulerNouvelleFacture.Size = new System.Drawing.Size(75, 23);
+            this.annulerNouvelleFacture.TabIndex = 36;
+            this.annulerNouvelleFacture.Text = "Annuler";
+            this.annulerNouvelleFacture.UseVisualStyleBackColor = true;
+            this.annulerNouvelleFacture.Click += new System.EventHandler(this.button2_Click);
+            // 
             // NouvelleFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 626);
+            this.ClientSize = new System.Drawing.Size(884, 651);
+            this.Controls.Add(this.annulerNouvelleFacture);
+            this.Controls.Add(this.validerNouvelleFacture);
             this.Controls.Add(this.TTC);
             this.Controls.Add(this.TVA);
             this.Controls.Add(this.HT);
@@ -441,7 +465,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NouvelleFacture";
-            this.Text = "Nouvelle Facture";
+            this.Text = "Ouatlelse : Nouvelle Facture";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -493,5 +517,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantite;
         private System.Windows.Forms.DataGridViewTextBoxColumn prixHTunite;
         private System.Windows.Forms.DataGridViewTextBoxColumn prixHT;
+        private System.Windows.Forms.Button validerNouvelleFacture;
+        private System.Windows.Forms.Button annulerNouvelleFacture;
     }
 }

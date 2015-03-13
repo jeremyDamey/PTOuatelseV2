@@ -373,6 +373,7 @@
             this.annuler.TabIndex = 68;
             this.annuler.Text = "Annuler";
             this.annuler.UseVisualStyleBackColor = true;
+            this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
             // NouveauClient
             // 
@@ -404,7 +405,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "NouveauClient";
-            this.Text = "Nouveau Client";
+            this.Text = "Ouatelse : Nouveau Client";
             this.tabControl1.ResumeLayout(false);
             this.Factures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

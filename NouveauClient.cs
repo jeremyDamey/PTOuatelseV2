@@ -16,5 +16,10 @@ namespace PTOuatelse
         {
             InitializeComponent();
         }
+
+        private void annuler_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

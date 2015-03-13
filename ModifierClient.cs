@@ -21,5 +21,10 @@ namespace PTOuatelse
         {
 
         }
+
+        private void annulerClient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
