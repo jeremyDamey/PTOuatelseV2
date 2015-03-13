@@ -54,7 +54,7 @@
             this.IdentifiantBox.Size = new System.Drawing.Size(100, 20);
             this.IdentifiantBox.TabIndex = 1;
             this.IdentifiantBox.Text = "identifiant";
-            this.IdentifiantBox.TextChanged += new System.EventHandler(this.IdentifiantBox_TextChanged);
+            this.IdentifiantBox.Enter += new System.EventHandler(this.IdentifiantBox_TextChanged);
             // 
             // MDPBox
             // 
@@ -63,6 +63,8 @@
             this.MDPBox.Size = new System.Drawing.Size(100, 20);
             this.MDPBox.TabIndex = 2;
             this.MDPBox.Text = "*******";
+            this.MDPBox.UseSystemPasswordChar = true;
+            this.MDPBox.Enter += new System.EventHandler(this.MDPBox_TextChanged);
             // 
             // ConnectionButton
             // 

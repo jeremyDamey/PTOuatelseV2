@@ -44,8 +44,7 @@ namespace PTOuatelse
 
         private void rechercher_TextChanged(object sender, EventArgs e)
         {
-            if (rechercher.Text == "Rechercher...")
-                rechercher.Text = "";
+            rechercher.ResetText();
         }
 
         private void recherche_Click(object sender, EventArgs e)

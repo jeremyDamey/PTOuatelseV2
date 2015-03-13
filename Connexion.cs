@@ -44,14 +44,14 @@ namespace WindowsFormsApplication1
             IdentifiantBox.ResetText();
         }
 
-        private void logoBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void IdentifiantBox_TextChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(IdentifiantBox.Text);
+            IdentifiantBox.ResetText();
+        }
+
+        private void MDPBox_TextChanged(object sender, EventArgs e)
+        {
+            MDPBox.ResetText();
         }
     }
 }

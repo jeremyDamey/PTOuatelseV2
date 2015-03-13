@@ -127,7 +127,7 @@
             this.rechercher.Tag = "";
             this.rechercher.Text = "Rechercher...";
             this.rechercher.WordWrap = false;
-            this.rechercher.TextChanged += new System.EventHandler(this.rechercher_TextChanged);
+            this.rechercher.Click += new System.EventHandler(this.rechercher_TextChanged);
             // 
             // recherche
             // 
