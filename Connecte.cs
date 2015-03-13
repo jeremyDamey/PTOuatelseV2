@@ -12,10 +12,11 @@ namespace WindowsFormsApplication1
 {
     public partial class Connecte : Form
     {
-        public Connecte()
+        string id = null;
+        public Connecte(String test)
         {
             InitializeComponent();
-            
+            this.id = test;
         }
 
         private void BonjourText_Click(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace WindowsFormsApplication1
 
         private void OKbutton_Click(object sender, EventArgs e)
         {
-            Acceuil acceuil = new Acceuil();
+            Acceuil acceuil = new Acceuil(id);
             acceuil.Show();
             this.Hide();
         }
@@ -33,7 +34,7 @@ namespace WindowsFormsApplication1
         private void Connecte_Load(object sender, EventArgs e)
         {
             Connexion connexion = new Connexion();
-            BonjourText.Text = "Bonjour " + connexion.id;
+            BonjourText.Text = "Bonjour " + this.id;
         }
     }
 }
