@@ -28,5 +28,10 @@ namespace PTOuatelse
             ModifierSalarié modifier = new ModifierSalarié();
             modifier.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
