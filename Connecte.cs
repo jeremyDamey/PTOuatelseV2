@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
         private void Connecte_Load(object sender, EventArgs e)
         {
             Connexion connexion = new Connexion();
-            BonjourText.Text = "Bonjour " + connexion.IdentifiantBox.Text;
+            BonjourText.Text = "Bonjour " + connexion.id;
         }
     }
 }

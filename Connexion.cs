@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Connexion : Form
     {
+        public string id = null;
         public Connexion()
         {
             InitializeComponent();
@@ -34,6 +35,7 @@ namespace WindowsFormsApplication1
             {
                 Connecte connection = new Connecte();
                 connection.Show();
+                id = IdentifiantBox.Text;
                 this.Hide();
             }            
         }
