@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
 
 namespace WindowsFormsApplication1
 {
@@ -48,6 +49,16 @@ namespace WindowsFormsApplication1
         private void SalarieButton_Click(object sender, EventArgs e)
         {
             GestionSalarie salarie = new GestionSalarie();
+            try
+            {
+                MySQLConnection conn = new MySQLConnection(new MySQLConnectionString("http://info-morgane.iut.u-bordeaux1.fr/phpmyadmin/index.php?server=3&token=bbc8f186c78fe58c25ba152288a4cdf8", "pt_ouatelse1", "pt_ouatelse1", "DYwBqVhnNL5SPddK").AsString);
+                conn.Open();
+                MessageBox.Show("CONNEXION REUSSIE");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("connexion non réussie : \n" + ex.Message);
+            }
             salarie.Show();
         }
 
