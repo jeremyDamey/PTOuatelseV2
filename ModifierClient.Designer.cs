@@ -63,6 +63,8 @@
             this.Nombre_Achats = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fréquence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notes = new System.Windows.Forms.TabPage();
+            this.validerClient = new System.Windows.Forms.Button();
+            this.annulerClient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -355,11 +357,31 @@
             this.Notes.Text = "Notes";
             this.Notes.UseVisualStyleBackColor = true;
             // 
+            // validerClient
+            // 
+            this.validerClient.Location = new System.Drawing.Point(314, 468);
+            this.validerClient.Name = "validerClient";
+            this.validerClient.Size = new System.Drawing.Size(75, 23);
+            this.validerClient.TabIndex = 45;
+            this.validerClient.Text = "Valider";
+            this.validerClient.UseVisualStyleBackColor = true;
+            // 
+            // annulerClient
+            // 
+            this.annulerClient.Location = new System.Drawing.Point(487, 468);
+            this.annulerClient.Name = "annulerClient";
+            this.annulerClient.Size = new System.Drawing.Size(75, 23);
+            this.annulerClient.TabIndex = 46;
+            this.annulerClient.Text = "Annuler";
+            this.annulerClient.UseVisualStyleBackColor = true;
+            // 
             // ModifierClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 474);
+            this.ClientSize = new System.Drawing.Size(855, 522);
+            this.Controls.Add(this.annulerClient);
+            this.Controls.Add(this.validerClient);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
@@ -431,6 +453,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Achats;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fréquence;
         private System.Windows.Forms.TabPage Notes;
+        private System.Windows.Forms.Button validerClient;
+        private System.Windows.Forms.Button annulerClient;
 
     }
 }
