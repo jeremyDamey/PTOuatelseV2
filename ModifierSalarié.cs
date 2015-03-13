@@ -21,5 +21,10 @@ namespace PTOuatelse
         {
 
         }
+
+        private void annulerModifierSalarie_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

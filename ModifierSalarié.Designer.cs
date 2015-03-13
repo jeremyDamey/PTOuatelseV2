@@ -243,6 +243,7 @@
             this.annulerModifierSalarie.TabIndex = 67;
             this.annulerModifierSalarie.Text = "Annuler";
             this.annulerModifierSalarie.UseVisualStyleBackColor = true;
+            this.annulerModifierSalarie.Click += new System.EventHandler(this.annulerModifierSalarie_Click);
             // 
             // ModifierSalarié
             // 
@@ -273,7 +274,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Name = "ModifierSalarié";
-            this.Text = "Modifier Salarié";
+            this.Text = "Ouatelse : Modifier Salarié";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

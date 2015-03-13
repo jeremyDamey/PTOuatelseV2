@@ -374,6 +374,7 @@
             this.annulerClient.TabIndex = 46;
             this.annulerClient.Text = "Annuler";
             this.annulerClient.UseVisualStyleBackColor = true;
+            this.annulerClient.Click += new System.EventHandler(this.annulerClient_Click);
             // 
             // ModifierClient
             // 
@@ -405,7 +406,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "ModifierClient";
-            this.Text = "Modifier Client";
+            this.Text = "Ouatelse : Détails d\'un client";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
