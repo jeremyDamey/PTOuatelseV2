@@ -243,6 +243,7 @@
             this.annuler.TabIndex = 88;
             this.annuler.Text = "Annuler";
             this.annuler.UseVisualStyleBackColor = true;
+            this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
             // NouveauSalarie
             // 
@@ -273,7 +274,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Name = "NouveauSalarie";
-            this.Text = "Nouveau Salarié";
+            this.Text = "Ouatelse : Nouveau Salarié";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
