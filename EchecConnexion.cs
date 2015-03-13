@@ -27,6 +27,7 @@ namespace PTOuatelse
         {
             Connexion connexion = new Connexion();
             connexion.Show();
+            this.Hide();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication1;
 
 namespace PTOuatelse
 {
@@ -44,12 +45,12 @@ namespace PTOuatelse
 
         private void rechercher_TextChanged(object sender, EventArgs e)
         {
-
+            rechercher.ResetText();
         }
 
         private void recherche_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -60,6 +61,11 @@ namespace PTOuatelse
         private void GestionStock_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

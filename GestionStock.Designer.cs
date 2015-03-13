@@ -57,6 +57,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -119,12 +120,15 @@
             // 
             // rechercher
             // 
+            this.rechercher.AccessibleName = "";
             this.rechercher.Location = new System.Drawing.Point(613, 76);
             this.rechercher.Name = "rechercher";
             this.rechercher.Size = new System.Drawing.Size(100, 20);
             this.rechercher.TabIndex = 7;
+            this.rechercher.Tag = "";
             this.rechercher.Text = "Rechercher...";
-            this.rechercher.TextChanged += new System.EventHandler(this.rechercher_TextChanged);
+            this.rechercher.WordWrap = false;
+            this.rechercher.Click += new System.EventHandler(this.rechercher_TextChanged);
             // 
             // recherche
             // 

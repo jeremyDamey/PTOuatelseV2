@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Connexion : Form
     {
+        public string id = null;
         public Connexion()
         {
             InitializeComponent();
@@ -23,18 +24,20 @@ namespace WindowsFormsApplication1
         }
 
         private void ConnectionButton_Click(object sender, EventArgs e)
-        {
+        {            
             if (MDPBox.Text != "aa")
             {
-                PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();
+                PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();                
                 echec.Show();
+                this.Hide();                
             }
             else
             {
-                Connecte connection = new Connecte();
+                this.id = IdentifiantBox.Text.ToString();
+                Connecte connection = new Connecte(id);
                 connection.Show();
-            }
-           
+                this.Hide();
+            }            
         }
 
         private void AnnulerButton_Click(object sender, EventArgs e)
@@ -43,9 +46,14 @@ namespace WindowsFormsApplication1
             IdentifiantBox.ResetText();
         }
 
-        private void logoBox_Click(object sender, EventArgs e)
+        private void IdentifiantBox_TextChanged(object sender, EventArgs e)
         {
+            IdentifiantBox.ResetText();
+        }
 
+        private void MDPBox_TextChanged(object sender, EventArgs e)
+        {
+            MDPBox.ResetText();
         }
     }
 }
