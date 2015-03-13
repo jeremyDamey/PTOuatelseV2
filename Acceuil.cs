@@ -13,14 +13,16 @@ namespace WindowsFormsApplication1
 {
     public partial class Acceuil : Form
     {
-        public Acceuil()
+        string user = null;
+        public Acceuil(string id)
         {
             InitializeComponent();
+            this.user = id;
         }
 
         private void Acceuil_Load(object sender, EventArgs e)
         {
-
+            ConnecteLabel.Text = "Connecté en tant que : " + Environment.NewLine + user;
         }
 
         private void DeconnexionButton_Click(object sender, EventArgs e)
@@ -59,6 +61,5 @@ namespace WindowsFormsApplication1
             GestionStock produit = new GestionStock();
             produit.Show();
         }
-
     }
 }
