@@ -50,6 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.validerSalarie = new System.Windows.Forms.Button();
+            this.annuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -223,11 +225,32 @@
             this.label7.TabIndex = 73;
             this.label7.Text = "Date de naissance :";
             // 
+            // validerSalarie
+            // 
+            this.validerSalarie.Location = new System.Drawing.Point(332, 304);
+            this.validerSalarie.Name = "validerSalarie";
+            this.validerSalarie.Size = new System.Drawing.Size(75, 23);
+            this.validerSalarie.TabIndex = 87;
+            this.validerSalarie.Text = "Valider";
+            this.validerSalarie.UseVisualStyleBackColor = true;
+            this.validerSalarie.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // annuler
+            // 
+            this.annuler.Location = new System.Drawing.Point(455, 304);
+            this.annuler.Name = "annuler";
+            this.annuler.Size = new System.Drawing.Size(75, 23);
+            this.annuler.TabIndex = 88;
+            this.annuler.Text = "Annuler";
+            this.annuler.UseVisualStyleBackColor = true;
+            // 
             // NouveauSalarie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 353);
+            this.Controls.Add(this.annuler);
+            this.Controls.Add(this.validerSalarie);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
@@ -280,6 +303,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button validerSalarie;
+        private System.Windows.Forms.Button annuler;
 
     }
 }

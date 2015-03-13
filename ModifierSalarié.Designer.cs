@@ -50,6 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.validerModifSalarie = new System.Windows.Forms.Button();
+            this.annulerModifierSalarie = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,11 +226,31 @@
             this.label7.TabIndex = 52;
             this.label7.Text = "Date de naissance :";
             // 
+            // validerModifSalarie
+            // 
+            this.validerModifSalarie.Location = new System.Drawing.Point(353, 298);
+            this.validerModifSalarie.Name = "validerModifSalarie";
+            this.validerModifSalarie.Size = new System.Drawing.Size(75, 23);
+            this.validerModifSalarie.TabIndex = 66;
+            this.validerModifSalarie.Text = "Valider";
+            this.validerModifSalarie.UseVisualStyleBackColor = true;
+            // 
+            // annulerModifierSalarie
+            // 
+            this.annulerModifierSalarie.Location = new System.Drawing.Point(496, 298);
+            this.annulerModifierSalarie.Name = "annulerModifierSalarie";
+            this.annulerModifierSalarie.Size = new System.Drawing.Size(75, 23);
+            this.annulerModifierSalarie.TabIndex = 67;
+            this.annulerModifierSalarie.Text = "Annuler";
+            this.annulerModifierSalarie.UseVisualStyleBackColor = true;
+            // 
             // ModifierSalarié
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(931, 447);
+            this.ClientSize = new System.Drawing.Size(931, 360);
+            this.Controls.Add(this.annulerModifierSalarie);
+            this.Controls.Add(this.validerModifSalarie);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
@@ -281,5 +303,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button validerModifSalarie;
+        private System.Windows.Forms.Button annulerModifierSalarie;
     }
 }

@@ -63,6 +63,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.valider = new System.Windows.Forms.Button();
+            this.annuler = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Factures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -354,11 +356,31 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "Détails d\'un client";
             // 
+            // valider
+            // 
+            this.valider.Location = new System.Drawing.Point(360, 468);
+            this.valider.Name = "valider";
+            this.valider.Size = new System.Drawing.Size(75, 23);
+            this.valider.TabIndex = 67;
+            this.valider.Text = "Valider";
+            this.valider.UseVisualStyleBackColor = true;
+            // 
+            // annuler
+            // 
+            this.annuler.Location = new System.Drawing.Point(501, 468);
+            this.annuler.Name = "annuler";
+            this.annuler.Size = new System.Drawing.Size(75, 23);
+            this.annuler.TabIndex = 68;
+            this.annuler.Text = "Annuler";
+            this.annuler.UseVisualStyleBackColor = true;
+            // 
             // NouveauClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 472);
+            this.ClientSize = new System.Drawing.Size(972, 519);
+            this.Controls.Add(this.annuler);
+            this.Controls.Add(this.valider);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
@@ -430,5 +452,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button valider;
+        private System.Windows.Forms.Button annuler;
     }
 }
