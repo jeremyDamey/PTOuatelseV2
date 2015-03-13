@@ -38,5 +38,10 @@ namespace PTOuatelse
         {
             this.Hide();
         }
+
+        private void supprimerClient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

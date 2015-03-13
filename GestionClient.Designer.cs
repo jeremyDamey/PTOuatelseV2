@@ -93,6 +93,7 @@
             this.supprimerClient.TabIndex = 4;
             this.supprimerClient.Text = "Supprimer Client";
             this.supprimerClient.UseVisualStyleBackColor = true;
+            this.supprimerClient.Click += new System.EventHandler(this.supprimerClient_Click);
             // 
             // dataGridView1
             // 
