@@ -9,7 +9,7 @@ class DBConect
     private string uid;
     private string password;
 
-    private void Initialize()
+    public void Initialize()
     {
         server = "info-viviane.iut.bx1";
         database = "pt_ouatelse1";

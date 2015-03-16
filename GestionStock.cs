@@ -16,6 +16,8 @@ namespace PTOuatelse
         public GestionStock()
         {
             InitializeComponent();
+            DBConect connexion = new DBConect();
+            connexion.Initialize();
         }
 
         private void modifierProduit_Click(object sender, EventArgs e)

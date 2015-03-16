@@ -15,6 +15,8 @@ namespace PTOuatelse
         public GestionClients()
         {
             InitializeComponent();
+            DBConect connexion = new DBConect();
+            connexion.Initialize();
         }
 
         private void GestionClients_Load(object sender, EventArgs e)
