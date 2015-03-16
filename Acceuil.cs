@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
+using MySql.Data.MySqlClient;
+using MySQLDriverCS;
 
 namespace WindowsFormsApplication1
 {
@@ -51,9 +53,27 @@ namespace WindowsFormsApplication1
             GestionSalarie salarie = new GestionSalarie();
             try
             {
-                MySQLConnection conn = new MySQLConnection(new MySQLConnectionString("http://info-morgane.iut.u-bordeaux1.fr/phpmyadmin/index.php?server=3&token=bbc8f186c78fe58c25ba152288a4cdf8", "pt_ouatelse1", "pt_ouatelse1", "DYwBqVhnNL5SPddK").AsString);
+                MySQLConnection conn = new MySQLConnection(new MySQLConnectionString("info-morgane.iut.u-bordeaux1.fr/phpmyadmin", "pt_ouatelse1", "pt_ouatelse1", "DYwBqVhnNL5SPddK").AsString);
+                MessageBox.Show("TEST");
                 conn.Open();
                 MessageBox.Show("CONNEXION REUSSIE");
+                conn.Close();
+
+                /*MySqlConnection oMySqlConn = new MySqlConnection();
+                oMySqlConn.ConnectionString = "User ID=pt_ouatelse1;" +
+                                              "Password=DYwBqVhnNL5SPddK;" +
+                                              "Host=http://info-morgane.iut.u-bordeaux1.fr/phpmyadmin/index.php?server=3&token=bbc8f186c78fe58c25ba152288a4cdf8;" +
+                                              "Port=22;" +
+                                              "Database=pt_ouatelse1;" +
+                                              "Direct=true;" +
+                                              "Protocol=TCP;" +
+                                              "Compress=false;" +
+                                              "Pooling=true;" +
+                                              "Min Pool Size=0;" +
+                                              "Max Pool Size=100;" +
+                                              "Connection Lifetime=0";
+                oMySqlConn.Open();
+                MessageBox.Show("CONNEXION REUSSIE");*/
             }
             catch (Exception ex)
             {

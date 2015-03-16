@@ -465,7 +465,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "NouvelleFacture";
-            this.Text = "Ouatlelse : Nouvelle Facture";
+            this.Text = "Nouvelle Facture";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
