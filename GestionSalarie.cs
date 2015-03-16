@@ -15,6 +15,8 @@ namespace PTOuatelse
         public GestionSalarie()
         {
             InitializeComponent();
+            DBConect connexion = new DBConect();
+            connexion.Initialize();
         }
 
         private void NouveauSalarie_Click(object sender, EventArgs e)
