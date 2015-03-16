@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PTOuatelse;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,15 +18,19 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void AnnulerNouvelleFacture_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
+
+        private void ValiderNouvelleFacture_Click(object sender, EventArgs e)
+        {
+            NouvelleFactureAjoutee nouvelleFactureAjoutee = new NouvelleFactureAjoutee();
+            nouvelleFactureAjoutee.Show();
+            this.Hide();
+        }
+
+
 
     }
 }
