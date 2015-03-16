@@ -93,6 +93,12 @@
     <Compile Include="Acceuil.Designer.cs">
       <DependentUpon>Acceuil.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientAjoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientAjoute.Designer.cs">
+      <DependentUpon>ClientAjoute.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -164,6 +170,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientAjoute.resx">
+      <DependentUpon>ClientAjoute.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
