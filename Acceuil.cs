@@ -16,11 +16,6 @@ namespace WindowsFormsApplication1
 {
     public partial class Acceuil : Form
     {
-        private MySqlConnection connection;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
         string user = null;
         public Acceuil(string id)
         {
