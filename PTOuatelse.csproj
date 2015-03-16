@@ -168,6 +168,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalarieAjoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalarieAjoute.Designer.cs">
+      <DependentUpon>SalarieAjoute.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Acceuil.resx">
       <DependentUpon>Acceuil.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,6 +223,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SalarieAjoute.resx">
+      <DependentUpon>SalarieAjoute.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
