@@ -237,3 +237,6 @@ C:\Users\jdamey\Source\Repos\ptouatelse3\bin\Debug\MySql.Data.Entity.EF5.dll
 C:\Users\jdamey\Source\Repos\ptouatelse3\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\Users\jdamey\Source\Repos\ptouatelse3\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\jdamey\Source\Repos\ptouatelse3\bin\Debug\MySql.Web.dll
+C:\Users\jdamey.IUT\Source\Repos\ptouatelse3\bin\Debug\PTOuatelse.exe.config
+C:\Users\jdamey.IUT\Source\Repos\ptouatelse3\obj\Debug\PTOuatelse.exe
+C:\Users\jdamey.IUT\Source\Repos\ptouatelse3\obj\Debug\PTOuatelse.pdb
