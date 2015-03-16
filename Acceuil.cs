@@ -10,12 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
-using MySQLDriverCS;
+//using MySQLDriverCS;
 
 namespace WindowsFormsApplication1
 {
     public partial class Acceuil : Form
     {
+        private MySqlConnection connection;
+        private string server;
+        private string database;
+        private string uid;
+        private string password;
         string user = null;
         public Acceuil(string id)
         {
@@ -53,27 +58,15 @@ namespace WindowsFormsApplication1
             GestionSalarie salarie = new GestionSalarie();
             try
             {
-                MySQLConnection conn = new MySQLConnection(new MySQLConnectionString("info-morgane.iut.u-bordeaux1.fr/phpmyadmin", "pt_ouatelse1", "pt_ouatelse1", "DYwBqVhnNL5SPddK").AsString);
-                MessageBox.Show("TEST");
-                conn.Open();
-                MessageBox.Show("CONNEXION REUSSIE");
-                conn.Close();
+                server = "info-viviane.iut.bx1";
+                database = "pt_ouatelse1";
+                uid = "pt_ouatelse1";
+                password = "DYwBqVhnNL5SPddK";
+                string connectionString;
+                connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-                /*MySqlConnection oMySqlConn = new MySqlConnection();
-                oMySqlConn.ConnectionString = "User ID=pt_ouatelse1;" +
-                                              "Password=DYwBqVhnNL5SPddK;" +
-                                              "Host=http://info-morgane.iut.u-bordeaux1.fr/phpmyadmin/index.php?server=3&token=bbc8f186c78fe58c25ba152288a4cdf8;" +
-                                              "Port=22;" +
-                                              "Database=pt_ouatelse1;" +
-                                              "Direct=true;" +
-                                              "Protocol=TCP;" +
-                                              "Compress=false;" +
-                                              "Pooling=true;" +
-                                              "Min Pool Size=0;" +
-                                              "Max Pool Size=100;" +
-                                              "Connection Lifetime=0";
-                oMySqlConn.Open();
-                MessageBox.Show("CONNEXION REUSSIE");*/
+                connection = new MySqlConnection(connectionString);
+                MessageBox.Show("CONNEXION REUSSIE");
             }
             catch (Exception ex)
             {
