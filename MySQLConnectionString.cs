@@ -19,5 +19,37 @@ class DBConect
         connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
         connection = new MySqlConnection(connectionString);
+        connection.Open();
     }
+
+    public string requete(string req)
+    {
+
+        string strRequete = "SELECT nom FROM clients" ;
+        string varNom="";
+        MySqlCommand myCommand = new MySqlCommand(strRequete,connection);
+        MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
+        while (mySqDataReader.Read()){
+        if(mySqDataReader["nom"]!= System.DBNull.Value){
+            varNom += (string)mySqDataReader["nom"] + "\n";
+        }else{
+            varNom = " ";
+        }
+    }
+return varNom;
 }
+}
+/*}
+        connection.Open();
+        MySqlCommand test = new MySqlCommand(req, connection);
+        test.ExecuteNonQuery();
+        req = test.ToString();
+        MySqlDataReader reader = test.ExecuteReader();
+        req = null;
+        while (reader.Read())
+        {
+            req += reader.ToString() + "\n";
+        }
+        return req;
+    }
+}*/

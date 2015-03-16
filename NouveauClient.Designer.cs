@@ -189,6 +189,7 @@
             this.Mail.Name = "Mail";
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 65;
+            this.Mail.TextChanged += new System.EventHandler(this.Mail_TextChanged);
             // 
             // DateNaissance
             // 
@@ -196,6 +197,7 @@
             this.DateNaissance.Name = "DateNaissance";
             this.DateNaissance.Size = new System.Drawing.Size(188, 20);
             this.DateNaissance.TabIndex = 64;
+            this.DateNaissance.TextChanged += new System.EventHandler(this.DateNaissance_TextChanged);
             // 
             // Téléphone
             // 
@@ -203,6 +205,7 @@
             this.Téléphone.Name = "Téléphone";
             this.Téléphone.Size = new System.Drawing.Size(369, 20);
             this.Téléphone.TabIndex = 63;
+            this.Téléphone.TextChanged += new System.EventHandler(this.Téléphone_TextChanged);
             // 
             // NomPays
             // 
@@ -210,6 +213,7 @@
             this.NomPays.Name = "NomPays";
             this.NomPays.Size = new System.Drawing.Size(255, 20);
             this.NomPays.TabIndex = 62;
+            this.NomPays.TextChanged += new System.EventHandler(this.NomPays_TextChanged);
             // 
             // NomVille
             // 
@@ -217,6 +221,7 @@
             this.NomVille.Name = "NomVille";
             this.NomVille.Size = new System.Drawing.Size(262, 20);
             this.NomVille.TabIndex = 61;
+            this.NomVille.TextChanged += new System.EventHandler(this.NomVille_TextChanged);
             // 
             // CodePostal
             // 
@@ -224,6 +229,7 @@
             this.CodePostal.Name = "CodePostal";
             this.CodePostal.Size = new System.Drawing.Size(100, 20);
             this.CodePostal.TabIndex = 60;
+            this.CodePostal.TextChanged += new System.EventHandler(this.CodePostal_TextChanged);
             // 
             // Adresse2
             // 
@@ -231,6 +237,7 @@
             this.Adresse2.Name = "Adresse2";
             this.Adresse2.Size = new System.Drawing.Size(673, 20);
             this.Adresse2.TabIndex = 59;
+            this.Adresse2.TextChanged += new System.EventHandler(this.Adresse2_TextChanged);
             // 
             // Adresse1
             // 
@@ -238,6 +245,7 @@
             this.Adresse1.Name = "Adresse1";
             this.Adresse1.Size = new System.Drawing.Size(673, 20);
             this.Adresse1.TabIndex = 58;
+            this.Adresse1.TextChanged += new System.EventHandler(this.Adresse1_TextChanged);
             // 
             // CodeClient
             // 
@@ -245,6 +253,7 @@
             this.CodeClient.Name = "CodeClient";
             this.CodeClient.Size = new System.Drawing.Size(238, 20);
             this.CodeClient.TabIndex = 57;
+            this.CodeClient.TextChanged += new System.EventHandler(this.CodeClient_TextChanged);
             // 
             // Nom
             // 
@@ -252,6 +261,7 @@
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(286, 20);
             this.Nom.TabIndex = 56;
+            this.Nom.TextChanged += new System.EventHandler(this.Nom_TextChanged);
             // 
             // Genre
             // 
@@ -364,6 +374,7 @@
             this.valider.TabIndex = 67;
             this.valider.Text = "Valider";
             this.valider.UseVisualStyleBackColor = true;
+            this.valider.Click += new System.EventHandler(this.valider_Click);
             // 
             // annuler
             // 

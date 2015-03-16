@@ -50,8 +50,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.validerSalarie = new System.Windows.Forms.Button();
             this.annuler = new System.Windows.Forms.Button();
+            this.ValiderNouveauSalarie = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,7 @@
             this.Mail.Name = "Mail";
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 86;
+            this.Mail.TextChanged += new System.EventHandler(this.Mail_TextChanged);
             // 
             // DateNaissance
             // 
@@ -68,6 +69,7 @@
             this.DateNaissance.Name = "DateNaissance";
             this.DateNaissance.Size = new System.Drawing.Size(188, 20);
             this.DateNaissance.TabIndex = 85;
+            this.DateNaissance.TextChanged += new System.EventHandler(this.DateNaissance_TextChanged);
             // 
             // Téléphone
             // 
@@ -75,6 +77,7 @@
             this.Téléphone.Name = "Téléphone";
             this.Téléphone.Size = new System.Drawing.Size(369, 20);
             this.Téléphone.TabIndex = 84;
+            this.Téléphone.TextChanged += new System.EventHandler(this.Téléphone_TextChanged);
             // 
             // NomPays
             // 
@@ -82,6 +85,7 @@
             this.NomPays.Name = "NomPays";
             this.NomPays.Size = new System.Drawing.Size(255, 20);
             this.NomPays.TabIndex = 83;
+            this.NomPays.TextChanged += new System.EventHandler(this.NomPays_TextChanged);
             // 
             // NomVille
             // 
@@ -89,6 +93,7 @@
             this.NomVille.Name = "NomVille";
             this.NomVille.Size = new System.Drawing.Size(262, 20);
             this.NomVille.TabIndex = 82;
+            this.NomVille.TextChanged += new System.EventHandler(this.NomVille_TextChanged);
             // 
             // CodePostal
             // 
@@ -96,6 +101,7 @@
             this.CodePostal.Name = "CodePostal";
             this.CodePostal.Size = new System.Drawing.Size(100, 20);
             this.CodePostal.TabIndex = 81;
+            this.CodePostal.TextChanged += new System.EventHandler(this.CodePostal_TextChanged);
             // 
             // Adresse2
             // 
@@ -103,6 +109,7 @@
             this.Adresse2.Name = "Adresse2";
             this.Adresse2.Size = new System.Drawing.Size(673, 20);
             this.Adresse2.TabIndex = 80;
+            this.Adresse2.TextChanged += new System.EventHandler(this.Adresse2_TextChanged);
             // 
             // Adresse1
             // 
@@ -110,6 +117,7 @@
             this.Adresse1.Name = "Adresse1";
             this.Adresse1.Size = new System.Drawing.Size(673, 20);
             this.Adresse1.TabIndex = 79;
+            this.Adresse1.TextChanged += new System.EventHandler(this.Adresse1_TextChanged);
             // 
             // CodeSalarie
             // 
@@ -117,6 +125,7 @@
             this.CodeSalarie.Name = "CodeSalarie";
             this.CodeSalarie.Size = new System.Drawing.Size(238, 20);
             this.CodeSalarie.TabIndex = 78;
+            this.CodeSalarie.TextChanged += new System.EventHandler(this.CodeSalarie_TextChanged);
             // 
             // Nom
             // 
@@ -124,6 +133,7 @@
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(286, 20);
             this.Nom.TabIndex = 77;
+            this.Nom.TextChanged += new System.EventHandler(this.Nom_TextChanged);
             // 
             // Genre
             // 
@@ -225,16 +235,6 @@
             this.label7.TabIndex = 73;
             this.label7.Text = "Date de naissance :";
             // 
-            // validerSalarie
-            // 
-            this.validerSalarie.Location = new System.Drawing.Point(332, 304);
-            this.validerSalarie.Name = "validerSalarie";
-            this.validerSalarie.Size = new System.Drawing.Size(75, 23);
-            this.validerSalarie.TabIndex = 87;
-            this.validerSalarie.Text = "Valider";
-            this.validerSalarie.UseVisualStyleBackColor = true;
-            this.validerSalarie.Click += new System.EventHandler(this.button1_Click);
-            // 
             // annuler
             // 
             this.annuler.Location = new System.Drawing.Point(455, 304);
@@ -245,13 +245,23 @@
             this.annuler.UseVisualStyleBackColor = true;
             this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
+            // ValiderNouveauSalarie
+            // 
+            this.ValiderNouveauSalarie.Location = new System.Drawing.Point(332, 304);
+            this.ValiderNouveauSalarie.Name = "ValiderNouveauSalarie";
+            this.ValiderNouveauSalarie.Size = new System.Drawing.Size(75, 23);
+            this.ValiderNouveauSalarie.TabIndex = 89;
+            this.ValiderNouveauSalarie.Text = "Valider";
+            this.ValiderNouveauSalarie.UseVisualStyleBackColor = true;
+            this.ValiderNouveauSalarie.Click += new System.EventHandler(this.ValiderNouveauSalarie_Click);
+            // 
             // NouveauSalarie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 353);
+            this.Controls.Add(this.ValiderNouveauSalarie);
             this.Controls.Add(this.annuler);
-            this.Controls.Add(this.validerSalarie);
             this.Controls.Add(this.Mail);
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
@@ -304,8 +314,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button validerSalarie;
         private System.Windows.Forms.Button annuler;
+        private System.Windows.Forms.Button ValiderNouveauSalarie;
 
     }
 }
