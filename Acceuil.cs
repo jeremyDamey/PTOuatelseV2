@@ -56,22 +56,6 @@ namespace WindowsFormsApplication1
         private void SalarieButton_Click(object sender, EventArgs e)
         {
             GestionSalarie salarie = new GestionSalarie();
-            try
-            {
-                server = "info-viviane.iut.bx1";
-                database = "pt_ouatelse1";
-                uid = "pt_ouatelse1";
-                password = "DYwBqVhnNL5SPddK";
-                string connectionString;
-                connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
-                connection = new MySqlConnection(connectionString);
-                MessageBox.Show("CONNEXION REUSSIE");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("connexion non réussie : \n" + ex.Message);
-            }
             salarie.Show();
         }
 

@@ -11,13 +11,12 @@ class DBConect
 
     private void Initialize()
     {
-        server = "localhost";
-        database = "connectcsharptomysql";
-        uid = "username";
-        password = "password";
+        server = "info-viviane.iut.bx1";
+        database = "pt_ouatelse1";
+        uid = "pt_ouatelse1";
+        password = "DYwBqVhnNL5SPddK";
         string connectionString;
-        connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-        database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+        connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
         connection = new MySqlConnection(connectionString);
     }
