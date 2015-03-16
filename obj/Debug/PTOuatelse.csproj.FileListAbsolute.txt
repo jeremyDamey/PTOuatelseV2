@@ -267,3 +267,4 @@ C:\Users\coroblin.IUT\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.SalarieAjoute.resources
+C:\Users\coroblin.IUT\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.NouvelleFactureAjoutee.resources
