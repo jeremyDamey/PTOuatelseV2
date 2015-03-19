@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace PTOuatelse
 {
     public partial class GestionClients : Form
-    {
+    {//hello
         private string server;
         private string database;
         private string uid;
