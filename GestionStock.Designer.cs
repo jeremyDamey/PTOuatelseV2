@@ -39,11 +39,6 @@
             this.rechercher = new System.Windows.Forms.TextBox();
             this.recherche = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomProduit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prixAchat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prixVente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TVA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -143,45 +138,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ref,
-            this.nomProduit,
-            this.prixAchat,
-            this.prixVente,
-            this.TVA});
             this.dataGridView1.Location = new System.Drawing.Point(12, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(814, 242);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // Ref
-            // 
-            this.Ref.HeaderText = "Ref";
-            this.Ref.Name = "Ref";
-            this.Ref.Width = 200;
-            // 
-            // nomProduit
-            // 
-            this.nomProduit.HeaderText = "Nom Produit";
-            this.nomProduit.Name = "nomProduit";
-            this.nomProduit.Width = 200;
-            // 
-            // prixAchat
-            // 
-            this.prixAchat.HeaderText = "Prix Achat";
-            this.prixAchat.Name = "prixAchat";
-            // 
-            // prixVente
-            // 
-            this.prixVente.HeaderText = "Prix Vente";
-            this.prixVente.Name = "prixVente";
-            // 
-            // TVA
-            // 
-            this.TVA.HeaderText = "TVA";
-            this.TVA.Name = "TVA";
-            this.TVA.Width = 170;
             // 
             // GestionStock
             // 
@@ -220,10 +181,5 @@
         private System.Windows.Forms.TextBox rechercher;
         private System.Windows.Forms.Button recherche;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ref;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomProduit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prixAchat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prixVente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TVA;
     }
 }
