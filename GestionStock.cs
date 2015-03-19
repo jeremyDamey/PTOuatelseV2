@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,20 +14,19 @@ namespace PTOuatelse
 {
     public partial class GestionStock : Form
     {
+        private string server;
+        private string database;
+        private string uid;
+        private string password;
+        private MySqlConnection connection;
+        private MySqlDataAdapter mySqlDataAdapter;
+        string chaine = null;
         string nomsProduits = null;
         string prixAchatProduit = null;
         string prixVenteProduit = null;
         public GestionStock()
         {
             InitializeComponent();
-            DBConect connexion = new DBConect();
-            connexion.Initialize();
-            nomsProduits = connexion.requete("SELECT nom FROM  produits", "nom");
-            prixAchatProduit = connexion.requete("SELECT prix_achat FROM produits", "prix_achat");
-            prixVenteProduit = connexion.requete("SELECT prix_vente FROM produits", "prix_vente");
-            MessageBox.Show("Nom du produit : " + nomsProduits.ToString() + "Prix d'achat : " + prixAchatProduit.ToString() + "Prix de vente : " + prixVenteProduit.ToString());
-            //MessageBox.Show(prixAchatProduit.ToString());
-            //MessageBox.Show(prixVenteProduit.ToString());
         }
 
         private void modifierProduit_Click(object sender, EventArgs e)
@@ -72,7 +72,19 @@ namespace PTOuatelse
 
         private void GestionStock_Load(object sender, EventArgs e)
         {
+            server = "info-viviane.iut.bx1";
+            database = "pt_ouatelse1";
+            uid = "pt_ouatelse1";
+            password = "DYwBqVhnNL5SPddK";
+            string connectionString;
+            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
+            connection = new MySqlConnection(connectionString);
+
+            mySqlDataAdapter = new MySqlDataAdapter("select id,prix_achat,prix_vente,tva,code_ean from produits", connection);
+            DataSet ds = new DataSet();
+            mySqlDataAdapter.Fill(ds);
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
