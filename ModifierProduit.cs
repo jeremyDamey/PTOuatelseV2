@@ -14,7 +14,7 @@ namespace PTOuatelse
     {
         public ModifierProduit()
         {
-            InitializeComponent();
+            InitializeComponent(); //coucouc
         }
 
         private void ModifierProduit_Load(object sender, EventArgs e)
