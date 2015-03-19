@@ -25,19 +25,19 @@ namespace WindowsFormsApplication1
 
         private void ConnectionButton_Click(object sender, EventArgs e)
         {            
-            if (IdentifiantBox.Text != "[A..Z]")
+            /*if (IdentifiantBox.Text != "[A..Z]")
             {
                 PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();                
                 echec.Show();
                 this.Hide();                
             }
             else
-            {
+            {*/
                 this.id = IdentifiantBox.Text.ToString();
                 Connecte connection = new Connecte(id);
                 connection.Show();
                 this.Hide();
-            }            
+            //}            
         }
 
         private void AnnulerButton_Click(object sender, EventArgs e)
