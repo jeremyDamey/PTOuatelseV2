@@ -29,6 +29,8 @@ namespace PTOuatelse
 
         private void ModifierSalarié_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'pt_ouatelse1DataSet.salaries'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
+            this.salariesTableAdapter.Fill(this.pt_ouatelse1DataSet.salaries);
 
         }
     }
