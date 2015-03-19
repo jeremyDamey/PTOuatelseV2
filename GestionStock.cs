@@ -15,15 +15,18 @@ namespace PTOuatelse
     {
         string nomsProduits = null;
         string prixAchatProduit = null;
+        string prixVenteProduit = null;
         public GestionStock()
         {
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
             nomsProduits = connexion.requete("SELECT nom FROM  produits", "nom");
-            //prixAchatProduit = connexion.requete("SELECT prix_achat FROM produits");
-            MessageBox.Show(nomsProduits.ToString());
+            prixAchatProduit = connexion.requete("SELECT prix_achat FROM produits", "prix_achat");
+            prixVenteProduit = connexion.requete("SELECT prix_vente FROM produits", "prix_vente");
+            MessageBox.Show("Nom du produit : " + nomsProduits.ToString() + "Prix d'achat : " + prixAchatProduit.ToString() + "Prix de vente : " + prixVenteProduit.ToString());
             //MessageBox.Show(prixAchatProduit.ToString());
+            //MessageBox.Show(prixVenteProduit.ToString());
         }
 
         private void modifierProduit_Click(object sender, EventArgs e)
