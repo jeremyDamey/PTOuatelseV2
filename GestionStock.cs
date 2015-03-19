@@ -13,14 +13,17 @@ namespace PTOuatelse
 {
     public partial class GestionStock : Form
     {
-        string chaine = null;
+        string nomsProduits = null;
+        string prixAchatProduit = null;
         public GestionStock()
         {
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
-            chaine = connexion.requete("SELECT nom FROM  clients");
-            MessageBox.Show(chaine.ToString());
+            nomsProduits = connexion.requete("SELECT nom FROM  produits");
+            //prixAchatProduit = connexion.requete("SELECT prix_achat FROM produits");
+            MessageBox.Show(nomsProduits.ToString());
+            //MessageBox.Show(prixAchatProduit.ToString());
         }
 
         private void modifierProduit_Click(object sender, EventArgs e)
