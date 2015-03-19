@@ -30,10 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestionSalarie));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ref = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ville = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supprimerSalarie = new System.Windows.Forms.Button();
             this.modifierSalarie = new System.Windows.Forms.Button();
             this.NouveauSalarie = new System.Windows.Forms.Button();
@@ -48,39 +44,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ref,
-            this.nom,
-            this.adresse,
-            this.ville});
             this.dataGridView1.Location = new System.Drawing.Point(64, 122);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(838, 231);
             this.dataGridView1.TabIndex = 13;
-            // 
-            // Ref
-            // 
-            this.Ref.HeaderText = "Ref";
-            this.Ref.Name = "Ref";
-            this.Ref.Width = 195;
-            // 
-            // nom
-            // 
-            this.nom.HeaderText = "Nom";
-            this.nom.Name = "nom";
-            this.nom.Width = 200;
-            // 
-            // adresse
-            // 
-            this.adresse.HeaderText = "Adresse";
-            this.adresse.Name = "adresse";
-            this.adresse.Width = 200;
-            // 
-            // ville
-            // 
-            this.ville.HeaderText = "Ville";
-            this.ville.Name = "ville";
-            this.ville.Width = 200;
             // 
             // supprimerSalarie
             // 
@@ -173,10 +140,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ref;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nom;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adresse;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ville;
         private System.Windows.Forms.Button supprimerSalarie;
         private System.Windows.Forms.Button modifierSalarie;
         private System.Windows.Forms.Button NouveauSalarie;
