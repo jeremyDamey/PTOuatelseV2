@@ -87,11 +87,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Acceuil.cs">
+    <Compile Include="Accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Acceuil.Designer.cs">
-      <DependentUpon>Acceuil.cs</DependentUpon>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientAjoute.cs">
       <SubType>Form</SubType>
@@ -180,8 +180,8 @@
     <Compile Include="SalarieAjoute.Designer.cs">
       <DependentUpon>SalarieAjoute.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Acceuil.resx">
-      <DependentUpon>Acceuil.cs</DependentUpon>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientAjoute.resx">
       <DependentUpon>ClientAjoute.cs</DependentUpon>

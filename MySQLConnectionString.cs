@@ -39,17 +39,3 @@ class DBConect
 return varNom;
 }
 }
-/*}
-        connection.Open();
-        MySqlCommand test = new MySqlCommand(req, connection);
-        test.ExecuteNonQuery();
-        req = test.ToString();
-        MySqlDataReader reader = test.ExecuteReader();
-        req = null;
-        while (reader.Read())
-        {
-            req += reader.ToString() + "\n";
-        }
-        return req;
-    }
-}*/

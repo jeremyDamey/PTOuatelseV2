@@ -284,7 +284,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
             this.Name = "NouveauSalarie";
-            this.Text = "Ouatelse : Nouveau Salarié";
+            this.Text = "Nouveau Salarié";
+            this.Load += new System.EventHandler(this.NouveauSalarie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

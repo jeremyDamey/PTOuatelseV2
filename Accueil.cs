@@ -14,10 +14,10 @@ using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Acceuil : Form
+    public partial class Accueil : Form
     {
         string user = null;
-        public Acceuil(string id)
+        public Accueil(string id)
         {
             InitializeComponent();
             this.user = id;

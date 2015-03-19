@@ -30,6 +30,11 @@ namespace WindowsFormsApplication1
             this.Hide();
         }
 
+        private void NouvelleFacture_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

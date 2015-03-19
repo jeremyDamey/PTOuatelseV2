@@ -78,5 +78,10 @@ namespace PTOuatelse
             clientAjoute.Show();
             this.Hide();
         }
+
+        private void NouveauClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
