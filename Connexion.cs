@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
 
         private void ConnectionButton_Click(object sender, EventArgs e)
         {            
-            if (IdentifiantBox.Text != "[A..Z]")
+            *if (IdentifiantBox.Text != "[A..Z]")
             {
                 PTOuatelse.EchecConnexion echec = new PTOuatelse.EchecConnexion();                
                 echec.Show();
