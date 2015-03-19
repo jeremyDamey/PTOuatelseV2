@@ -31,7 +31,8 @@ namespace PTOuatelse
 
         private void modifierProduit_Click(object sender, EventArgs e)
         {
-
+            ModifierProduit modifier = new ModifierProduit();
+            modifier.Show();
         }
 
         private void nouveauProduit_Click(object sender, EventArgs e)

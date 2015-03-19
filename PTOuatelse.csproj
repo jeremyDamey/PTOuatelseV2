@@ -209,6 +209,9 @@
     <EmbeddedResource Include="ModifierClient.resx">
       <DependentUpon>ModifierClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModifierProduit.resx">
+      <DependentUpon>ModifierProduit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModifierSalarié.resx">
       <DependentUpon>ModifierSalarié.cs</DependentUpon>
     </EmbeddedResource>

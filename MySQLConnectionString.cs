@@ -38,4 +38,25 @@ class DBConect
         mySqDataReader.Close();
 return varNom;
 }
+
+    public bool validerConnexion(string req, string variable, string id)
+    {
+        bool user = false;
+        MySqlCommand myCommand = new MySqlCommand(req, connection);
+        MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
+        while (mySqDataReader.Read())
+        {
+            if (mySqDataReader[variable] != System.DBNull.Value)
+            {
+                if (id == mySqDataReader[variable].ToString())
+                {
+                    user = true;
+                    mySqDataReader.Close();
+                    return user;
+                }
+            }
+        }
+        mySqDataReader.Close();
+        return user;
+    }
 }

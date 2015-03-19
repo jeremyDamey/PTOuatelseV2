@@ -451,3 +451,4 @@ C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.Properties.R
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.pdb
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication1.Accueil.resources
+C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.ModifierProduit.resources
