@@ -45,6 +45,8 @@
             this.Notes = new System.Windows.Forms.TabPage();
             this.Mail = new System.Windows.Forms.TextBox();
             this.DateNaissance = new System.Windows.Forms.TextBox();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.NomPays = new System.Windows.Forms.TextBox();
             this.NomVille = new System.Windows.Forms.TextBox();
@@ -66,8 +68,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.valider = new System.Windows.Forms.Button();
             this.annuler = new System.Windows.Forms.Button();
-            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.clientsTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
             this.tabControl1.SuspendLayout();
@@ -75,9 +75,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Statistiques.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -200,16 +200,24 @@
             // 
             // DateNaissance
             // 
-            this.DateNaissance.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "naissance", true));
             this.DateNaissance.Location = new System.Drawing.Point(662, 239);
             this.DateNaissance.Name = "DateNaissance";
             this.DateNaissance.Size = new System.Drawing.Size(188, 20);
             this.DateNaissance.TabIndex = 64;
             this.DateNaissance.TextChanged += new System.EventHandler(this.DateNaissance_TextChanged);
             // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "clients";
+            this.clientsBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
+            // pt_ouatelse1DataSet
+            // 
+            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
+            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Téléphone
             // 
-            this.Téléphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "portable", true));
             this.Téléphone.Location = new System.Drawing.Point(177, 239);
             this.Téléphone.Name = "Téléphone";
             this.Téléphone.Size = new System.Drawing.Size(369, 20);
@@ -242,7 +250,6 @@
             // 
             // Adresse2
             // 
-            this.Adresse2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "adresse2", true));
             this.Adresse2.Location = new System.Drawing.Point(177, 174);
             this.Adresse2.Name = "Adresse2";
             this.Adresse2.Size = new System.Drawing.Size(673, 20);
@@ -251,7 +258,6 @@
             // 
             // Adresse1
             // 
-            this.Adresse1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "adresse1", true));
             this.Adresse1.Location = new System.Drawing.Point(177, 148);
             this.Adresse1.Name = "Adresse1";
             this.Adresse1.Size = new System.Drawing.Size(673, 20);
@@ -260,7 +266,6 @@
             // 
             // CodeClient
             // 
-            this.CodeClient.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "id", true));
             this.CodeClient.Location = new System.Drawing.Point(177, 121);
             this.CodeClient.Name = "CodeClient";
             this.CodeClient.Size = new System.Drawing.Size(238, 20);
@@ -269,7 +274,6 @@
             // 
             // Nom
             // 
-            this.Nom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "nom", true));
             this.Nom.Location = new System.Drawing.Point(564, 123);
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(286, 20);
@@ -399,16 +403,6 @@
             this.annuler.UseVisualStyleBackColor = true;
             this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
-            // pt_ouatelse1DataSet
-            // 
-            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
-            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "clients";
-            this.clientsBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
             // clientsTableAdapter
             // 
             this.clientsTableAdapter.ClearBeforeFill = true;
@@ -468,9 +462,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.Statistiques.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

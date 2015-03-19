@@ -69,7 +69,7 @@ namespace PTOuatelse
 
         private void Mail_TextChanged(object sender, EventArgs e)
         {
-            this.Text = Mail.Text;
+            this.Text = Mail.Text; //RIEN
         }
 
         private void valider_Click(object sender, EventArgs e)
