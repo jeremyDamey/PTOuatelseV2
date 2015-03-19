@@ -327,7 +327,6 @@ C:\Users\antdubertrand\Source\Repos\ptouatelse4\bin\Debug\MySql.Data.Entity.EF6.
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\bin\Debug\MySql.Fabric.Plugin.dll
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\bin\Debug\MySql.Web.dll
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.csprojResolveAssemblyReference.cache
-C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication1.Acceuil.resources
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\PTOuatelse.ClientAjoute.resources
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication1.Connexion.resources
 C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication1.Connecte.resources
@@ -451,3 +450,4 @@ C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.NouvelleFact
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\coroblin.IUT\Source\Repos\ptouatelse6\obj\Debug\PTOuatelse.pdb
+C:\Users\antdubertrand\Source\Repos\ptouatelse4\obj\Debug\WindowsFormsApplication1.Accueil.resources
