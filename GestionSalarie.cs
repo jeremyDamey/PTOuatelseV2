@@ -35,5 +35,10 @@ namespace PTOuatelse
         {
             this.Hide();
         }
+
+        private void GestionSalarie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
