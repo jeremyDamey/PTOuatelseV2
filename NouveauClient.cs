@@ -81,6 +81,8 @@ namespace PTOuatelse
 
         private void NouveauClient_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'pt_ouatelse1DataSet.clients'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
+            this.clientsTableAdapter.Fill(this.pt_ouatelse1DataSet.clients);
 
         }
     }

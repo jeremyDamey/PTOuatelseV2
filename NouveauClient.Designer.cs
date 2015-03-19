@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NouveauClient));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Factures = new System.Windows.Forms.TabPage();
@@ -65,12 +66,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.valider = new System.Windows.Forms.Button();
             this.annuler = new System.Windows.Forms.Button();
+            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.clientsTableAdapter();
+            this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
             this.tabControl1.SuspendLayout();
             this.Factures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.Statistiques.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -193,6 +200,7 @@
             // 
             // DateNaissance
             // 
+            this.DateNaissance.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "naissance", true));
             this.DateNaissance.Location = new System.Drawing.Point(662, 239);
             this.DateNaissance.Name = "DateNaissance";
             this.DateNaissance.Size = new System.Drawing.Size(188, 20);
@@ -201,6 +209,7 @@
             // 
             // Téléphone
             // 
+            this.Téléphone.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "portable", true));
             this.Téléphone.Location = new System.Drawing.Point(177, 239);
             this.Téléphone.Name = "Téléphone";
             this.Téléphone.Size = new System.Drawing.Size(369, 20);
@@ -233,6 +242,7 @@
             // 
             // Adresse2
             // 
+            this.Adresse2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "adresse2", true));
             this.Adresse2.Location = new System.Drawing.Point(177, 174);
             this.Adresse2.Name = "Adresse2";
             this.Adresse2.Size = new System.Drawing.Size(673, 20);
@@ -241,6 +251,7 @@
             // 
             // Adresse1
             // 
+            this.Adresse1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "adresse1", true));
             this.Adresse1.Location = new System.Drawing.Point(177, 148);
             this.Adresse1.Name = "Adresse1";
             this.Adresse1.Size = new System.Drawing.Size(673, 20);
@@ -249,6 +260,7 @@
             // 
             // CodeClient
             // 
+            this.CodeClient.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "id", true));
             this.CodeClient.Location = new System.Drawing.Point(177, 121);
             this.CodeClient.Name = "CodeClient";
             this.CodeClient.Size = new System.Drawing.Size(238, 20);
@@ -257,6 +269,7 @@
             // 
             // Nom
             // 
+            this.Nom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "nom", true));
             this.Nom.Location = new System.Drawing.Point(564, 123);
             this.Nom.Name = "Nom";
             this.Nom.Size = new System.Drawing.Size(286, 20);
@@ -386,6 +399,38 @@
             this.annuler.UseVisualStyleBackColor = true;
             this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
+            // pt_ouatelse1DataSet
+            // 
+            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
+            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "clients";
+            this.clientsBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.civiliteTableAdapter = null;
+            this.tableAdapterManager.clientsTableAdapter = this.clientsTableAdapter;
+            this.tableAdapterManager.congeTableAdapter = null;
+            this.tableAdapterManager.factures_produitsTableAdapter = null;
+            this.tableAdapterManager.facturesTableAdapter = null;
+            this.tableAdapterManager.magasinTableAdapter = null;
+            this.tableAdapterManager.mouvement_stockTableAdapter = null;
+            this.tableAdapterManager.moyen_de_paiementTableAdapter = null;
+            this.tableAdapterManager.paysTableAdapter = null;
+            this.tableAdapterManager.produitsTableAdapter = null;
+            this.tableAdapterManager.rolesTableAdapter = null;
+            this.tableAdapterManager.salariesTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.villesTableAdapter = null;
+            // 
             // NouveauClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -424,6 +469,8 @@
             this.Statistiques.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,5 +514,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button valider;
         private System.Windows.Forms.Button annuler;
+        private pt_ouatelse1DataSet pt_ouatelse1DataSet;
+        private System.Windows.Forms.BindingSource clientsBindingSource;
+        private pt_ouatelse1DataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
+        private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
