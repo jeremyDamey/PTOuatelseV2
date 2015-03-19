@@ -58,7 +58,7 @@ namespace PTOuatelse
 
             connection = new MySqlConnection(connectionString); //RIEN
 
-            mySqlDataAdapter = new MySqlDataAdapter("select identifiant,nom,prenom,adresse1 from salaries", connection);
+            mySqlDataAdapter = new MySqlDataAdapter("select identifiant,nom,prenom,adresse1,fixe,portable,naissance from salaries", connection);
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
