@@ -25,7 +25,6 @@ class DBConect
     public string requete(string req, string variable)
     {
 
-        //string strRequete = "SELECT nom FROM clients" ;
         string varNom="";
         MySqlCommand myCommand = new MySqlCommand(req,connection);
         MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
