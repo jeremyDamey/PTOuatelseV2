@@ -35,6 +35,7 @@ class DBConect
             varNom = " ";
         }
     }
+        mySqDataReader.Close();
 return varNom;
 }
 }
