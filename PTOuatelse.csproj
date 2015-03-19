@@ -174,6 +174,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pt_ouatelse1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>pt_ouatelse1DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SalarieAjoute.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +246,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="pt_ouatelse1DataSet.xsc">
+      <DependentUpon>pt_ouatelse1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="pt_ouatelse1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>pt_ouatelse1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="pt_ouatelse1DataSet.xss">
+      <DependentUpon>pt_ouatelse1DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

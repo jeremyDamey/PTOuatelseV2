@@ -12,11 +12,14 @@ namespace PTOuatelse
 {
     public partial class GestionSalarie : Form
     {
+        string chaine = null;
         public GestionSalarie()
         {
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
+            chaine = connexion.requete("SELECT nom FROM  salaries", "nom");
+            MessageBox.Show(chaine.ToString());
         }
 
         private void NouveauSalarie_Click(object sender, EventArgs e)
