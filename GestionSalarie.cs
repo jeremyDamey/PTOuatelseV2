@@ -27,13 +27,6 @@ namespace PTOuatelse
         public GestionSalarie()
         {
             InitializeComponent();
-            DBConect connexion = new DBConect();
-            connexion.Initialize();
-            chaine = connexion.requete("SELECT nom FROM  salaries", "nom");
-            MessageBox.Show(chaine.ToString());
-
-
-
         }
 
 
