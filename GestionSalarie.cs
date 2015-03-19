@@ -64,7 +64,5 @@ namespace PTOuatelse
             dataGridView1.DataSource = ds.Tables[0];
 
         }
-        
-
     }
 }
