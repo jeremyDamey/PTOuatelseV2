@@ -162,6 +162,7 @@
             this.Controls.Add(this.rechercher);
             this.Name = "GestionSalarie";
             this.Text = "Gestion Salarié";
+            this.Load += new System.EventHandler(this.GestionSalarie_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
