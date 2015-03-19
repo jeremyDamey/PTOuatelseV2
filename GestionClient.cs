@@ -12,11 +12,14 @@ namespace PTOuatelse
 {
     public partial class GestionClients : Form
     {
+        string chaine = null;
         public GestionClients()
         {
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
+            chaine = connexion.requete("SELECT nom FROM  clients");
+            MessageBox.Show(chaine.ToString());
         }
 
         private void GestionClients_Load(object sender, EventArgs e)

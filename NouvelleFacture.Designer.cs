@@ -196,7 +196,7 @@
             // rechercheProduit
             // 
             this.rechercheProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.rechercheProduit.Location = new System.Drawing.Point(21, 503);
+            this.rechercheProduit.Location = new System.Drawing.Point(21, 476);
             this.rechercheProduit.Name = "rechercheProduit";
             this.rechercheProduit.Size = new System.Drawing.Size(100, 20);
             this.rechercheProduit.TabIndex = 15;
@@ -204,9 +204,9 @@
             // RechercherProduit
             // 
             this.RechercherProduit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.RechercherProduit.Location = new System.Drawing.Point(127, 501);
+            this.RechercherProduit.Location = new System.Drawing.Point(127, 476);
             this.RechercherProduit.Name = "RechercherProduit";
-            this.RechercherProduit.Size = new System.Drawing.Size(107, 23);
+            this.RechercherProduit.Size = new System.Drawing.Size(107, 20);
             this.RechercherProduit.TabIndex = 16;
             this.RechercherProduit.Text = "Recherche Produit";
             this.RechercherProduit.UseVisualStyleBackColor = true;
