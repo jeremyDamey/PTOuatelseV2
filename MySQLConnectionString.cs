@@ -22,7 +22,7 @@ class DBConect
         connection.Open();
     }
 
-    public string requete(string req)
+    public string requete(string req, string variable)
     {
 
         //string strRequete = "SELECT nom FROM clients" ;
@@ -30,8 +30,8 @@ class DBConect
         MySqlCommand myCommand = new MySqlCommand(req,connection);
         MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
         while (mySqDataReader.Read()){
-        if(mySqDataReader["nom"]!= System.DBNull.Value){
-            varNom += (string)mySqDataReader["nom"] + "\n";
+        if(mySqDataReader[variable]!= System.DBNull.Value){
+            varNom += mySqDataReader[variable].ToString() + "\n";
         }else{
             varNom = " ";
         }

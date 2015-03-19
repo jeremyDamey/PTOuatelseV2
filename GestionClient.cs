@@ -18,7 +18,7 @@ namespace PTOuatelse
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
-            chaine = connexion.requete("SELECT nom FROM  clients");
+            chaine = connexion.requete("SELECT nom FROM  clients","nom");
             MessageBox.Show(chaine.ToString());
         }
 

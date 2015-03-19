@@ -20,7 +20,7 @@ namespace PTOuatelse
             InitializeComponent();
             DBConect connexion = new DBConect();
             connexion.Initialize();
-            nomsProduits = connexion.requete("SELECT nom FROM  produits");
+            nomsProduits = connexion.requete("SELECT prix_achat FROM  produits", "prix_achat");
             //prixAchatProduit = connexion.requete("SELECT prix_achat FROM produits");
             MessageBox.Show(nomsProduits.ToString());
             //MessageBox.Show(prixAchatProduit.ToString());
