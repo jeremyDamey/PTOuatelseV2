@@ -78,5 +78,10 @@ namespace PTOuatelse
             salarieAjoute.Show();
             this.Hide();
         }
+
+        private void NouveauSalarie_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

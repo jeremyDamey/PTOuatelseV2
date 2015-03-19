@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Acceuil
+    partial class Accueil
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acceuil));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Accueil));
             this.FactureButton = new System.Windows.Forms.Button();
             this.ClientButton = new System.Windows.Forms.Button();
             this.SalarieButton = new System.Windows.Forms.Button();
@@ -119,7 +119,7 @@
             this.Logo.TabIndex = 7;
             this.Logo.TabStop = false;
             // 
-            // Acceuil
+            // Accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,8 +132,8 @@
             this.Controls.Add(this.SalarieButton);
             this.Controls.Add(this.ClientButton);
             this.Controls.Add(this.FactureButton);
-            this.Name = "Acceuil";
-            this.Text = "Acceuil";
+            this.Name = "Accueil";
+            this.Text = "Accueil";
             this.Load += new System.EventHandler(this.Acceuil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);

@@ -26,8 +26,8 @@ namespace WindowsFormsApplication1
 
         private void OKbutton_Click(object sender, EventArgs e)
         {
-            Acceuil acceuil = new Acceuil(id);
-            acceuil.Show();
+            Accueil accueil = new Accueil(id);
+            accueil.Show();
             this.Hide();
         }
 

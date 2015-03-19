@@ -416,7 +416,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "NouveauClient";
-            this.Text = "Ouatelse : Nouveau Client";
+            this.Text = "Nouveau Client";
+            this.Load += new System.EventHandler(this.NouveauClient_Load);
             this.tabControl1.ResumeLayout(false);
             this.Factures.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

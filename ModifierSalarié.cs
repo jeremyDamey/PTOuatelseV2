@@ -26,5 +26,10 @@ namespace PTOuatelse
         {
             this.Hide();
         }
+
+        private void ModifierSalarié_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
