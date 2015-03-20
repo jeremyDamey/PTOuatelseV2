@@ -50,39 +50,41 @@
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.stock = new System.Windows.Forms.TabPage();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.stats = new System.Windows.Forms.TabPage();
-            this.notes = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.mouvementstockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mouvement_stockTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.mouvement_stockTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantiteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produitsidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.magasinidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.facturesproduitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.factures_produitsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.factures_produitsTableAdapter();
-            this.Semaine = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nb_Ventes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mouvementstockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.stats = new System.Windows.Forms.TabPage();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.Mois = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nb_VentesMois = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Semaine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nb_Ventes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.notes = new System.Windows.Forms.TabPage();
+            this.mouvement_stockTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.mouvement_stockTableAdapter();
+            this.facturesproduitsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.factures_produitsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.factures_produitsTableAdapter();
+            this.valider = new System.Windows.Forms.Button();
+            this.annuler = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produitsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.stock.SuspendLayout();
-            this.stats.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mouvementstockBindingSource)).BeginInit();
+            this.stats.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturesproduitsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -264,6 +266,50 @@
             this.stock.Text = "Stock";
             this.stock.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.quantiteDataGridViewTextBoxColumn,
+            this.produitsidDataGridViewTextBoxColumn,
+            this.magasinidDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.mouvementstockBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 38);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(574, 150);
+            this.dataGridView1.TabIndex = 65;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // quantiteDataGridViewTextBoxColumn
+            // 
+            this.quantiteDataGridViewTextBoxColumn.DataPropertyName = "quantite";
+            this.quantiteDataGridViewTextBoxColumn.HeaderText = "quantite";
+            this.quantiteDataGridViewTextBoxColumn.Name = "quantiteDataGridViewTextBoxColumn";
+            // 
+            // produitsidDataGridViewTextBoxColumn
+            // 
+            this.produitsidDataGridViewTextBoxColumn.DataPropertyName = "produits_id";
+            this.produitsidDataGridViewTextBoxColumn.HeaderText = "produits_id";
+            this.produitsidDataGridViewTextBoxColumn.Name = "produitsidDataGridViewTextBoxColumn";
+            // 
+            // magasinidDataGridViewTextBoxColumn
+            // 
+            this.magasinidDataGridViewTextBoxColumn.DataPropertyName = "magasin_id";
+            this.magasinidDataGridViewTextBoxColumn.HeaderText = "magasin_id";
+            this.magasinidDataGridViewTextBoxColumn.Name = "magasinidDataGridViewTextBoxColumn";
+            // 
+            // mouvementstockBindingSource
+            // 
+            this.mouvementstockBindingSource.DataMember = "mouvement_stock";
+            this.mouvementstockBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(467, 3);
@@ -304,93 +350,25 @@
             this.stats.Text = "Statistiques";
             this.stats.UseVisualStyleBackColor = true;
             // 
-            // notes
+            // label11
             // 
-            this.notes.Location = new System.Drawing.Point(4, 22);
-            this.notes.Name = "notes";
-            this.notes.Padding = new System.Windows.Forms.Padding(3);
-            this.notes.Size = new System.Drawing.Size(574, 237);
-            this.notes.TabIndex = 2;
-            this.notes.Text = "Notes";
-            this.notes.UseVisualStyleBackColor = true;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(296, 33);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(198, 13);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Progression des ventes par mois :";
             // 
-            // dataGridView1
+            // label10
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.quantiteDataGridViewTextBoxColumn,
-            this.produitsidDataGridViewTextBoxColumn,
-            this.magasinidDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mouvementstockBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 38);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(574, 150);
-            this.dataGridView1.TabIndex = 65;
-            // 
-            // mouvementstockBindingSource
-            // 
-            this.mouvementstockBindingSource.DataMember = "mouvement_stock";
-            this.mouvementstockBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
-            // mouvement_stockTableAdapter
-            // 
-            this.mouvement_stockTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // quantiteDataGridViewTextBoxColumn
-            // 
-            this.quantiteDataGridViewTextBoxColumn.DataPropertyName = "quantite";
-            this.quantiteDataGridViewTextBoxColumn.HeaderText = "quantite";
-            this.quantiteDataGridViewTextBoxColumn.Name = "quantiteDataGridViewTextBoxColumn";
-            // 
-            // produitsidDataGridViewTextBoxColumn
-            // 
-            this.produitsidDataGridViewTextBoxColumn.DataPropertyName = "produits_id";
-            this.produitsidDataGridViewTextBoxColumn.HeaderText = "produits_id";
-            this.produitsidDataGridViewTextBoxColumn.Name = "produitsidDataGridViewTextBoxColumn";
-            // 
-            // magasinidDataGridViewTextBoxColumn
-            // 
-            this.magasinidDataGridViewTextBoxColumn.DataPropertyName = "magasin_id";
-            this.magasinidDataGridViewTextBoxColumn.HeaderText = "magasin_id";
-            this.magasinidDataGridViewTextBoxColumn.Name = "magasinidDataGridViewTextBoxColumn";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Semaine,
-            this.Nb_Ventes});
-            this.dataGridView2.Location = new System.Drawing.Point(18, 60);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(245, 159);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // facturesproduitsBindingSource
-            // 
-            this.facturesproduitsBindingSource.DataMember = "factures_produits";
-            this.facturesproduitsBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
-            // factures_produitsTableAdapter
-            // 
-            this.factures_produitsTableAdapter.ClearBeforeFill = true;
-            // 
-            // Semaine
-            // 
-            this.Semaine.HeaderText = "Semaine";
-            this.Semaine.Name = "Semaine";
-            // 
-            // Nb_Ventes
-            // 
-            this.Nb_Ventes.HeaderText = "Nb_Ventes";
-            this.Nb_Ventes.Name = "Nb_Ventes";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(15, 33);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(219, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Progression des ventes par semaine :";
             // 
             // dataGridView3
             // 
@@ -413,31 +391,77 @@
             this.Nb_VentesMois.HeaderText = "Nb Ventes";
             this.Nb_VentesMois.Name = "Nb_VentesMois";
             // 
-            // label10
+            // dataGridView2
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 33);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(219, 13);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Progression des ventes par semaine :";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Semaine,
+            this.Nb_Ventes});
+            this.dataGridView2.Location = new System.Drawing.Point(18, 60);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(245, 159);
+            this.dataGridView2.TabIndex = 0;
             // 
-            // label11
+            // Semaine
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(296, 33);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(198, 13);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Progression des ventes par mois :";
+            this.Semaine.HeaderText = "Semaine";
+            this.Semaine.Name = "Semaine";
+            // 
+            // Nb_Ventes
+            // 
+            this.Nb_Ventes.HeaderText = "Nb_Ventes";
+            this.Nb_Ventes.Name = "Nb_Ventes";
+            // 
+            // notes
+            // 
+            this.notes.Location = new System.Drawing.Point(4, 22);
+            this.notes.Name = "notes";
+            this.notes.Padding = new System.Windows.Forms.Padding(3);
+            this.notes.Size = new System.Drawing.Size(574, 237);
+            this.notes.TabIndex = 2;
+            this.notes.Text = "Notes";
+            this.notes.UseVisualStyleBackColor = true;
+            // 
+            // mouvement_stockTableAdapter
+            // 
+            this.mouvement_stockTableAdapter.ClearBeforeFill = true;
+            // 
+            // facturesproduitsBindingSource
+            // 
+            this.facturesproduitsBindingSource.DataMember = "factures_produits";
+            this.facturesproduitsBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
+            // factures_produitsTableAdapter
+            // 
+            this.factures_produitsTableAdapter.ClearBeforeFill = true;
+            // 
+            // valider
+            // 
+            this.valider.Location = new System.Drawing.Point(173, 536);
+            this.valider.Name = "valider";
+            this.valider.Size = new System.Drawing.Size(75, 23);
+            this.valider.TabIndex = 63;
+            this.valider.Text = "Valider";
+            this.valider.UseVisualStyleBackColor = true;
+            this.valider.Click += new System.EventHandler(this.valider_Click);
+            // 
+            // annuler
+            // 
+            this.annuler.Location = new System.Drawing.Point(392, 536);
+            this.annuler.Name = "annuler";
+            this.annuler.Size = new System.Drawing.Size(75, 23);
+            this.annuler.TabIndex = 64;
+            this.annuler.Text = "Annuler";
+            this.annuler.UseVisualStyleBackColor = true;
+            this.annuler.Click += new System.EventHandler(this.annuler_Click);
             // 
             // ModifierProduit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 549);
+            this.ClientSize = new System.Drawing.Size(666, 577);
+            this.Controls.Add(this.annuler);
+            this.Controls.Add(this.valider);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label7);
@@ -462,13 +486,13 @@
             this.tabControl1.ResumeLayout(false);
             this.stock.ResumeLayout(false);
             this.stock.PerformLayout();
-            this.stats.ResumeLayout(false);
-            this.stats.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mouvementstockBindingSource)).EndInit();
+            this.stats.ResumeLayout(false);
+            this.stats.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturesproduitsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,5 +542,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nb_VentesMois;
         private System.Windows.Forms.DataGridViewTextBoxColumn Semaine;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nb_Ventes;
+        private System.Windows.Forms.Button valider;
+        private System.Windows.Forms.Button annuler;
     }
 }
