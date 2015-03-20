@@ -36,11 +36,15 @@
             this.Prix_HT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Prix_TTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mail = new System.Windows.Forms.TextBox();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
             this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.NomPays = new System.Windows.Forms.TextBox();
+            this.paysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.NomVille = new System.Windows.Forms.TextBox();
             this.CodePostal = new System.Windows.Forms.TextBox();
+            this.villesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Adresse2 = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
             this.CodeClient = new System.Windows.Forms.TextBox();
@@ -66,24 +70,21 @@
             this.Notes = new System.Windows.Forms.TabPage();
             this.validerClient = new System.Windows.Forms.Button();
             this.annulerClient = new System.Windows.Forms.Button();
-            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clientsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.clientsTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
-            this.villesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.villesTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.villesTableAdapter();
-            this.paysBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.paysTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.paysTableAdapter();
+            this.villesTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.villesTableAdapter();
+            this.Prenom = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paysBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.Factures.SuspendLayout();
             this.Statistiques.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paysBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -131,6 +132,16 @@
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 42;
             // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "clients";
+            this.clientsBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
+            // pt_ouatelse1DataSet
+            // 
+            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
+            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // DateNaissance
             // 
             this.DateNaissance.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "naissance", true));
@@ -155,6 +166,11 @@
             this.NomPays.Size = new System.Drawing.Size(255, 20);
             this.NomPays.TabIndex = 39;
             // 
+            // paysBindingSource
+            // 
+            this.paysBindingSource.DataMember = "pays";
+            this.paysBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
             // NomVille
             // 
             this.NomVille.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "villes_id", true));
@@ -170,6 +186,11 @@
             this.CodePostal.Name = "CodePostal";
             this.CodePostal.Size = new System.Drawing.Size(100, 20);
             this.CodePostal.TabIndex = 37;
+            // 
+            // villesBindingSource
+            // 
+            this.villesBindingSource.DataMember = "villes";
+            this.villesBindingSource.DataSource = this.pt_ouatelse1DataSet;
             // 
             // Adresse2
             // 
@@ -200,7 +221,7 @@
             this.Nom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "nom", true));
             this.Nom.Location = new System.Drawing.Point(538, 123);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(286, 20);
+            this.Nom.Size = new System.Drawing.Size(120, 20);
             this.Nom.TabIndex = 33;
             // 
             // Genre
@@ -399,16 +420,6 @@
             this.annulerClient.UseVisualStyleBackColor = true;
             this.annulerClient.Click += new System.EventHandler(this.annulerClient_Click);
             // 
-            // pt_ouatelse1DataSet
-            // 
-            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
-            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "clients";
-            this.clientsBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
             // clientsTableAdapter
             // 
             this.clientsTableAdapter.ClearBeforeFill = true;
@@ -431,29 +442,27 @@
             this.tableAdapterManager.UpdateOrder = PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.villesTableAdapter = this.villesTableAdapter;
             // 
-            // villesBindingSource
+            // paysTableAdapter
             // 
-            this.villesBindingSource.DataMember = "villes";
-            this.villesBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            this.paysTableAdapter.ClearBeforeFill = true;
             // 
             // villesTableAdapter
             // 
             this.villesTableAdapter.ClearBeforeFill = true;
             // 
-            // paysBindingSource
+            // Prenom
             // 
-            this.paysBindingSource.DataMember = "pays";
-            this.paysBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
-            // paysTableAdapter
-            // 
-            this.paysTableAdapter.ClearBeforeFill = true;
+            this.Prenom.Location = new System.Drawing.Point(664, 123);
+            this.Prenom.Name = "Prenom";
+            this.Prenom.Size = new System.Drawing.Size(159, 20);
+            this.Prenom.TabIndex = 47;
             // 
             // ModifierClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 522);
+            this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annulerClient);
             this.Controls.Add(this.validerClient);
             this.Controls.Add(this.tabControl1);
@@ -482,15 +491,15 @@
             this.Text = "Détails d\'un client";
             this.Load += new System.EventHandler(this.ModifierClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paysBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.Factures.ResumeLayout(false);
             this.Statistiques.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.villesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paysBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -542,6 +551,7 @@
         private System.Windows.Forms.BindingSource villesBindingSource;
         private pt_ouatelse1DataSetTableAdapters.paysTableAdapter paysTableAdapter;
         private System.Windows.Forms.BindingSource paysBindingSource;
+        private System.Windows.Forms.TextBox Prenom;
 
     }
 }
