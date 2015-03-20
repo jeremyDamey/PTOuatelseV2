@@ -66,5 +66,15 @@ namespace PTOuatelse
             dataGridView1.DataSource = ds.Tables[0];
            
         }
+
+        private void supprimerSalarie_Click(object sender, EventArgs e)
+        {
+            int var = dataGridView1.CurrentCell.RowIndex;
+            
+            DBConect db = new DBConect();
+            db.Initialize();
+            db.supprimerSalarié(var);
+            this.Hide();
+        }
     }
 }
