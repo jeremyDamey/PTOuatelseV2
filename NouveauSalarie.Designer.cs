@@ -52,6 +52,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.annuler = new System.Windows.Forms.Button();
             this.ValiderNouveauSalarie = new System.Windows.Forms.Button();
+            this.Prenom = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,7 +132,7 @@
             // 
             this.Nom.Location = new System.Drawing.Point(536, 130);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(286, 20);
+            this.Nom.Size = new System.Drawing.Size(118, 20);
             this.Nom.TabIndex = 77;
             this.Nom.TextChanged += new System.EventHandler(this.Nom_TextChanged);
             // 
@@ -255,11 +256,19 @@
             this.ValiderNouveauSalarie.UseVisualStyleBackColor = true;
             this.ValiderNouveauSalarie.Click += new System.EventHandler(this.ValiderNouveauSalarie_Click);
             // 
+            // Prenom
+            // 
+            this.Prenom.Location = new System.Drawing.Point(660, 130);
+            this.Prenom.Name = "Prenom";
+            this.Prenom.Size = new System.Drawing.Size(162, 20);
+            this.Prenom.TabIndex = 90;
+            // 
             // NouveauSalarie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 353);
+            this.Controls.Add(this.Prenom);
             this.Controls.Add(this.ValiderNouveauSalarie);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.Mail);
@@ -317,6 +326,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button annuler;
         private System.Windows.Forms.Button ValiderNouveauSalarie;
+        private System.Windows.Forms.TextBox Prenom;
 
     }
 }

@@ -70,6 +70,7 @@
             this.annuler = new System.Windows.Forms.Button();
             this.clientsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.clientsTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
+            this.Prenom = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.Factures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -276,7 +277,7 @@
             // 
             this.Nom.Location = new System.Drawing.Point(564, 123);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(286, 20);
+            this.Nom.Size = new System.Drawing.Size(132, 20);
             this.Nom.TabIndex = 56;
             this.Nom.TextChanged += new System.EventHandler(this.Nom_TextChanged);
             // 
@@ -425,11 +426,19 @@
             this.tableAdapterManager.UpdateOrder = PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.villesTableAdapter = null;
             // 
+            // Prenom
+            // 
+            this.Prenom.Location = new System.Drawing.Point(702, 123);
+            this.Prenom.Name = "Prenom";
+            this.Prenom.Size = new System.Drawing.Size(147, 20);
+            this.Prenom.TabIndex = 69;
+            // 
             // NouveauClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 519);
+            this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.valider);
             this.Controls.Add(this.tabControl1);
@@ -512,5 +521,6 @@
         private System.Windows.Forms.BindingSource clientsBindingSource;
         private pt_ouatelse1DataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
         private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox Prenom;
     }
 }
