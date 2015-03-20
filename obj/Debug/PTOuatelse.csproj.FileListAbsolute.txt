@@ -600,3 +600,6 @@ C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.Propert
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.NouveauProduit.resources
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.ProduitAjoute.resources
+C:\Users\wsireix\Source\Repos\ggg\bin\Debug\PTOuatelse.exe.config
+C:\Users\wsireix\Source\Repos\ggg\obj\Debug\PTOuatelse.exe
+C:\Users\wsireix\Source\Repos\ggg\obj\Debug\PTOuatelse.pdb
