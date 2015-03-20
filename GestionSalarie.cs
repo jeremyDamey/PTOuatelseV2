@@ -56,7 +56,7 @@ namespace PTOuatelse
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-            connection = new MySqlConnection(connectionString); //RIEN
+            connection = new MySqlConnection(connectionString); 
 
             mySqlDataAdapter = new MySqlDataAdapter("select identifiant,nom,prenom,adresse1,fixe,portable,naissance from salaries", connection);
             DataSet ds = new DataSet();

@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModifierSalarié));
             this.Mail = new System.Windows.Forms.TextBox();
+            this.salariesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
             this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.NomPays = new System.Windows.Forms.TextBox();
@@ -53,13 +55,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.validerModifSalarie = new System.Windows.Forms.Button();
             this.annulerModifierSalarie = new System.Windows.Forms.Button();
-            this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
-            this.salariesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.salariesTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.salariesTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
+            this.Prenom = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.salariesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Mail
@@ -70,6 +71,16 @@
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 65;
             this.Mail.TextChanged += new System.EventHandler(this.Mail_TextChanged);
+            // 
+            // salariesBindingSource
+            // 
+            this.salariesBindingSource.DataMember = "salaries";
+            this.salariesBindingSource.DataSource = this.pt_ouatelse1DataSet;
+            // 
+            // pt_ouatelse1DataSet
+            // 
+            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
+            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DateNaissance
             // 
@@ -137,7 +148,7 @@
             this.Nom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "nom", true));
             this.Nom.Location = new System.Drawing.Point(562, 126);
             this.Nom.Name = "Nom";
-            this.Nom.Size = new System.Drawing.Size(286, 20);
+            this.Nom.Size = new System.Drawing.Size(120, 20);
             this.Nom.TabIndex = 56;
             // 
             // Genre
@@ -259,16 +270,6 @@
             this.annulerModifierSalarie.UseVisualStyleBackColor = true;
             this.annulerModifierSalarie.Click += new System.EventHandler(this.annulerModifierSalarie_Click);
             // 
-            // pt_ouatelse1DataSet
-            // 
-            this.pt_ouatelse1DataSet.DataSetName = "pt_ouatelse1DataSet";
-            this.pt_ouatelse1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // salariesBindingSource
-            // 
-            this.salariesBindingSource.DataMember = "salaries";
-            this.salariesBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
             // salariesTableAdapter
             // 
             this.salariesTableAdapter.ClearBeforeFill = true;
@@ -291,11 +292,19 @@
             this.tableAdapterManager.UpdateOrder = PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.villesTableAdapter = null;
             // 
+            // Prenom
+            // 
+            this.Prenom.Location = new System.Drawing.Point(688, 125);
+            this.Prenom.Name = "Prenom";
+            this.Prenom.Size = new System.Drawing.Size(159, 20);
+            this.Prenom.TabIndex = 68;
+            // 
             // ModifierSalarié
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 360);
+            this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annulerModifierSalarie);
             this.Controls.Add(this.validerModifSalarie);
             this.Controls.Add(this.Mail);
@@ -322,9 +331,9 @@
             this.Name = "ModifierSalarié";
             this.Text = "Modifier Salarié";
             this.Load += new System.EventHandler(this.ModifierSalarié_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.salariesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,5 +368,6 @@
         private System.Windows.Forms.BindingSource salariesBindingSource;
         private pt_ouatelse1DataSetTableAdapters.salariesTableAdapter salariesTableAdapter;
         private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.TextBox Prenom;
     }
 }
