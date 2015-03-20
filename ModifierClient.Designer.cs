@@ -452,6 +452,7 @@
             // 
             // Prenom
             // 
+            this.Prenom.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "prenom", true));
             this.Prenom.Location = new System.Drawing.Point(664, 123);
             this.Prenom.Name = "Prenom";
             this.Prenom.Size = new System.Drawing.Size(159, 20);
