@@ -59,4 +59,19 @@ return varNom;
         mySqDataReader.Close();
         return user;
     }
+
+    public void insertSalarié(string identifiant,string password,string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
+    {
+        string query = "INSERT INTO salaries (identifiant,mot_de_passe,nom,prenom,adresse1,adresse2,fixe,mail,naissance,roles_id,magasin_id,villes_id,pays_id,civilite_id) VALUES('" + identifiant + "','"+password+"','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1','1','1')";
+
+
+        //create command and assign the query and connection from the constructor
+        MySqlCommand cmd = new MySqlCommand(query, connection);
+
+        //Execute command
+        cmd.ExecuteNonQuery();
+        
+
+    }
+
 }

@@ -22,10 +22,6 @@ namespace PTOuatelse
             this.Hide();
         }
 
-        private void CodeClient_TextChanged(object sender, EventArgs e)
-        {
-            this.Text = CodeClient.Text;
-        }
 
         private void Nom_TextChanged(object sender, EventArgs e)
         {

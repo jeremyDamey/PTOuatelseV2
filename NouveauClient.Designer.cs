@@ -53,7 +53,6 @@
             this.CodePostal = new System.Windows.Forms.TextBox();
             this.Adresse2 = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
-            this.CodeClient = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Genre = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,7 +62,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.valider = new System.Windows.Forms.Button();
@@ -265,14 +263,6 @@
             this.Adresse1.TabIndex = 58;
             this.Adresse1.TextChanged += new System.EventHandler(this.Adresse1_TextChanged);
             // 
-            // CodeClient
-            // 
-            this.CodeClient.Location = new System.Drawing.Point(177, 121);
-            this.CodeClient.Name = "CodeClient";
-            this.CodeClient.Size = new System.Drawing.Size(238, 20);
-            this.CodeClient.TabIndex = 57;
-            this.CodeClient.TextChanged += new System.EventHandler(this.CodeClient_TextChanged);
-            // 
             // Nom
             // 
             this.Nom.Location = new System.Drawing.Point(564, 123);
@@ -354,15 +344,6 @@
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 48;
             this.label3.Text = "Adresse :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 121);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 13);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "Code client :";
             // 
             // pictureBox1
             // 
@@ -450,7 +431,6 @@
             this.Controls.Add(this.CodePostal);
             this.Controls.Add(this.Adresse2);
             this.Controls.Add(this.Adresse1);
-            this.Controls.Add(this.CodeClient);
             this.Controls.Add(this.Nom);
             this.Controls.Add(this.Genre);
             this.Controls.Add(this.label9);
@@ -460,7 +440,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Name = "NouveauClient";
@@ -502,7 +481,6 @@
         private System.Windows.Forms.TextBox CodePostal;
         private System.Windows.Forms.TextBox Adresse2;
         private System.Windows.Forms.TextBox Adresse1;
-        private System.Windows.Forms.TextBox CodeClient;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.ComboBox Genre;
         private System.Windows.Forms.Label label9;
@@ -512,7 +490,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button valider;

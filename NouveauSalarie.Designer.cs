@@ -30,14 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NouveauSalarie));
             this.Mail = new System.Windows.Forms.TextBox();
-            this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.NomPays = new System.Windows.Forms.TextBox();
             this.NomVille = new System.Windows.Forms.TextBox();
             this.CodePostal = new System.Windows.Forms.TextBox();
             this.Adresse2 = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
-            this.CodeSalarie = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Genre = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -46,13 +44,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.annuler = new System.Windows.Forms.Button();
             this.ValiderNouveauSalarie = new System.Windows.Forms.Button();
             this.Prenom = new System.Windows.Forms.TextBox();
+            this.label_Password = new System.Windows.Forms.Label();
+            this.textBox_Password = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,17 +60,9 @@
             // 
             this.Mail.Location = new System.Drawing.Point(149, 278);
             this.Mail.Name = "Mail";
-            this.Mail.Size = new System.Drawing.Size(672, 20);
+            this.Mail.Size = new System.Drawing.Size(369, 20);
             this.Mail.TabIndex = 86;
             this.Mail.TextChanged += new System.EventHandler(this.Mail_TextChanged);
-            // 
-            // DateNaissance
-            // 
-            this.DateNaissance.Location = new System.Drawing.Point(634, 246);
-            this.DateNaissance.Name = "DateNaissance";
-            this.DateNaissance.Size = new System.Drawing.Size(188, 20);
-            this.DateNaissance.TabIndex = 85;
-            this.DateNaissance.TextChanged += new System.EventHandler(this.DateNaissance_TextChanged);
             // 
             // Téléphone
             // 
@@ -119,14 +111,6 @@
             this.Adresse1.Size = new System.Drawing.Size(673, 20);
             this.Adresse1.TabIndex = 79;
             this.Adresse1.TextChanged += new System.EventHandler(this.Adresse1_TextChanged);
-            // 
-            // CodeSalarie
-            // 
-            this.CodeSalarie.Location = new System.Drawing.Point(149, 128);
-            this.CodeSalarie.Name = "CodeSalarie";
-            this.CodeSalarie.Size = new System.Drawing.Size(238, 20);
-            this.CodeSalarie.TabIndex = 78;
-            this.CodeSalarie.TextChanged += new System.EventHandler(this.CodeSalarie_TextChanged);
             // 
             // Nom
             // 
@@ -198,15 +182,6 @@
             this.label3.TabIndex = 69;
             this.label3.Text = "Adresse :";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Code salarié :";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -263,23 +238,49 @@
             this.Prenom.Size = new System.Drawing.Size(162, 20);
             this.Prenom.TabIndex = 90;
             // 
+            // label_Password
+            // 
+            this.label_Password.AutoSize = true;
+            this.label_Password.Location = new System.Drawing.Point(527, 278);
+            this.label_Password.Name = "label_Password";
+            this.label_Password.Size = new System.Drawing.Size(40, 13);
+            this.label_Password.TabIndex = 91;
+            this.label_Password.Text = "MDP : ";
+            // 
+            // textBox_Password
+            // 
+            this.textBox_Password.Location = new System.Drawing.Point(569, 277);
+            this.textBox_Password.Name = "textBox_Password";
+            this.textBox_Password.Size = new System.Drawing.Size(253, 20);
+            this.textBox_Password.TabIndex = 92;
+            this.textBox_Password.TextChanged += new System.EventHandler(this.textBox_Password_TextChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(632, 246);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(159, 20);
+            this.dateTimePicker1.TabIndex = 93;
+            this.dateTimePicker1.Value = new System.DateTime(2015, 3, 20, 0, 0, 0, 0);
+            // 
             // NouveauSalarie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 353);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.textBox_Password);
+            this.Controls.Add(this.label_Password);
             this.Controls.Add(this.Prenom);
             this.Controls.Add(this.ValiderNouveauSalarie);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.Mail);
-            this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
             this.Controls.Add(this.NomPays);
             this.Controls.Add(this.NomVille);
             this.Controls.Add(this.CodePostal);
             this.Controls.Add(this.Adresse2);
             this.Controls.Add(this.Adresse1);
-            this.Controls.Add(this.CodeSalarie);
             this.Controls.Add(this.Nom);
             this.Controls.Add(this.Genre);
             this.Controls.Add(this.label9);
@@ -288,7 +289,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label7);
@@ -304,14 +304,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox Mail;
-        private System.Windows.Forms.TextBox DateNaissance;
         private System.Windows.Forms.TextBox Téléphone;
         private System.Windows.Forms.TextBox NomPays;
         private System.Windows.Forms.TextBox NomVille;
         private System.Windows.Forms.TextBox CodePostal;
         private System.Windows.Forms.TextBox Adresse2;
         private System.Windows.Forms.TextBox Adresse1;
-        private System.Windows.Forms.TextBox CodeSalarie;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.ComboBox Genre;
         private System.Windows.Forms.Label label9;
@@ -320,13 +318,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button annuler;
         private System.Windows.Forms.Button ValiderNouveauSalarie;
         private System.Windows.Forms.TextBox Prenom;
+        private System.Windows.Forms.Label label_Password;
+        private System.Windows.Forms.TextBox textBox_Password;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
 
     }
 }

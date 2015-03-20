@@ -23,7 +23,7 @@ namespace PTOuatelse
         private MySqlConnection connection;
         private MySqlDataAdapter mySqlDataAdapter;
         string chaine = null;
-
+ 
         public GestionSalarie()
         {
             InitializeComponent();
@@ -49,6 +49,8 @@ namespace PTOuatelse
 
         private void GestionSalarie_Load(object sender, EventArgs e)
         {
+         
+
             server = "info-viviane.iut.bx1";
             database = "pt_ouatelse1";
             uid = "pt_ouatelse1";
@@ -62,7 +64,7 @@ namespace PTOuatelse
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
-
+           
         }
     }
 }
