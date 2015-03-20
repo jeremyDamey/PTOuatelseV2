@@ -27,5 +27,15 @@ namespace PTOuatelse
             this.produitsTableAdapter.Fill(this.pt_ouatelse1DataSet.produits);
 
         }
+
+        private void valider_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void annuler_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
