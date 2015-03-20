@@ -567,3 +567,6 @@ C:\Users\coroblin\Source\Repos\ptouatelse11\obj\Debug\WindowsFormsApplication1.N
 C:\Users\coroblin\Source\Repos\ptouatelse11\obj\Debug\PTOuatelse.NouvelleFactureAjoutee.resources
 C:\Users\coroblin\Source\Repos\ptouatelse11\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\coroblin\Source\Repos\ptouatelse11\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
+C:\Users\wsireix.IUT\Source\Repos\ptouatelse1\bin\Debug\PTOuatelse.exe.config
+C:\Users\wsireix.IUT\Source\Repos\ptouatelse1\obj\Debug\PTOuatelse.exe
+C:\Users\wsireix.IUT\Source\Repos\ptouatelse1\obj\Debug\PTOuatelse.pdb
