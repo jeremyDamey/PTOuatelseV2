@@ -31,6 +31,8 @@ namespace PTOuatelse
         private void valider_Click(object sender, EventArgs e)
         {
             this.Hide();
+            ProduitAjoute produitAjoute = new ProduitAjoute();
+            produitAjoute.Show();
         }
 
         private void annuler_Click(object sender, EventArgs e)
