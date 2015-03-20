@@ -599,3 +599,4 @@ C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.Nouvell
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.Properties.Resources.resources
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.csproj.GenerateResource.Cache
 C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.NouveauProduit.resources
+C:\Users\antdubertrand.IUT\Source\Repos\ptouatelse5\obj\Debug\PTOuatelse.ProduitAjoute.resources
