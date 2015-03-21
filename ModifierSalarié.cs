@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace PTOuatelse
 {
     public partial class ModifierSalarié : Form
-    {
+    { // A SUPPRIEMR    
         int id;
         public ModifierSalarié(int var)
         {
