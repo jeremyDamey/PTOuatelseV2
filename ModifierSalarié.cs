@@ -25,7 +25,7 @@ namespace PTOuatelse
             string password = "DYwBqVhnNL5SPddK";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
-
+            ///fzfzef
             MySqlConnection connection = new MySqlConnection(connectionString);
 
             MySqlDataAdapter mySqlDataAdapter = new MySqlDataAdapter("SELECT salaries.identifiant,civilite.nom,salaries.nom,salaries.prenom,salaries.adresse1,villes.code_postal,villes.libelle,magasin.adresse,pays.libelle,salaries.fixe,salaries.mail FROM salaries  INNER JOIN villes on salaries.villes_id = villes.id  INNER JOIN magasin on salaries.magasin_id = magasin.id  INNER  JOIN pays on salaries.pays_id = pays.id  INNER JOIN civilite on salaries.civilite_id=civilite.id  WHERE salaries.id=" + var + "", connection);
