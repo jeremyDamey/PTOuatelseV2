@@ -134,16 +134,16 @@ class DBConect
     }
     #endregion
 
-    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean)
+    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean, string quantite)
     {
         //string requete = "INSERT INTO clients (id,nom,prenom,adresse1,adresse2,fixe,mail,naissance,civilite_id,villes_id,nationalite) VALUES('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
 
-        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`) VALUES ('" + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "')";
-
+        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`nom`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`) VALUES ('" + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "')";
+        string requete2 = "INSERT INTO `pt_ouatelse1`.`mouvement_stock` (`quantite`, `produits_id`,`magasin_id`) VALUES ('" + quantite + "', (select id from produits where nom = '" + identifiant + "') , '1') ";
         MySqlCommand cmd = new MySqlCommand(requete, connection);
-
+        MySqlCommand cmd2 = new MySqlCommand(requete2, connection);
         cmd.ExecuteNonQuery();
-
+        cmd2.ExecuteNonQuery();
     }
 
 
