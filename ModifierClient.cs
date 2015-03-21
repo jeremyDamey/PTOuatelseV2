@@ -74,7 +74,26 @@ namespace PTOuatelse
 
         private void validerClient_Click(object sender, EventArgs e)
         {
+            //ModifierSalarie salarieModif = new ModifierSalarie();
+            DBConect db = new DBConect();
+            db.Initialize();
+            string identifiant;
 
+            //DateTime dateValue;
+            //dateValue = dateTimePicker1.Value;
+            //string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
+            int var = this.id;
+
+            string nom = Nom.Text;
+            string prénom = Prenom.Text;
+            string adresse = Adresse1.Text;
+            string CP = CodePostal.Text;
+            string nomVille = NomVille.Text;
+            string fixe = Téléphone.Text;
+            string mail = Mail.Text;
+            db.modifierSalarié(var, nom, prénom, adresse, fixe, mail);
+            //salarieAjoute.Show();
+            this.Hide();
         }
     }
 }
