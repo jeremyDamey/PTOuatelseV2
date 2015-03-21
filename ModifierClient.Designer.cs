@@ -401,6 +401,7 @@
             this.validerClient.TabIndex = 45;
             this.validerClient.Text = "Valider";
             this.validerClient.UseVisualStyleBackColor = true;
+            this.validerClient.Click += new System.EventHandler(this.validerClient_Click);
             // 
             // annulerClient
             // 

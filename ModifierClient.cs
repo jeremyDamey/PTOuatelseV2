@@ -77,5 +77,10 @@ namespace PTOuatelse
             this.clientsTableAdapter.Fill(this.pt_ouatelse1DataSet.clients);
 
         }
+
+        private void validerClient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
