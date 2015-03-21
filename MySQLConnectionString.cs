@@ -26,12 +26,12 @@ class DBConect
     public string requete(string req, string variable)
     {
 
-        string varNom="";
-        MySqlCommand myCommand = new MySqlCommand(req,connection);
+        string varNom = "";
+        MySqlCommand myCommand = new MySqlCommand(req, connection);
         MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
         while (mySqDataReader.Read())
         {
-            if(mySqDataReader[variable]!= System.DBNull.Value)
+            if (mySqDataReader[variable] != System.DBNull.Value)
             {
                 varNom += mySqDataReader[variable].ToString() + "\n";
             }
@@ -65,39 +65,44 @@ class DBConect
         return user;
     }
 
-    public void insererSalarié(string identifiant,string password,string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
+
+
+    #region Requêtes salarié
+    public void insererSalarié(string identifiant, string password, string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
     {
-        string requete = "INSERT INTO salaries (identifiant,mot_de_passe,nom,prenom,adresse1,adresse2,fixe,mail,naissance,roles_id,magasin_id,villes_id,pays_id,civilite_id) VALUES('" + identifiant + "','"+password+"','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1','1','1')";
+        string requete = "INSERT INTO salaries (identifiant,mot_de_passe,nom,prenom,adresse1,adresse2,fixe,mail,naissance,roles_id,magasin_id,villes_id,pays_id,civilite_id) VALUES('" + identifiant + "','" + password + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1','1','1')";
 
 
-       
+
         MySqlCommand cmd = new MySqlCommand(requete, connection);
 
 
         cmd.ExecuteNonQuery();
-        
+
 
     }
-
     public void modifierSalarié(int var, string nom, string prénom, string adresse, string fixe, string mail)
     {
         string requete = "UPDATE salaries SET nom = '" + nom + "', prenom = '" + prénom + "', adresse1 = '" + adresse + "', fixe = '" + fixe + "', mail ='" + mail + "' WHERE id = " + var + " ;";
 
         MySqlCommand cmd = new MySqlCommand(requete, connection);
         cmd.ExecuteNonQuery();
+        //da
     }
 
-    public void supprimerSalarié (int var)
+    public void supprimerSalarié(int var)
     {
         string requete = "DELETE FROM salaries WHERE id = " + var + ";";
-    
+
         MySqlCommand cmd = new MySqlCommand(requete, connection);
 
         //Execute command
         cmd.ExecuteNonQuery();
 
     }
+    #endregion
 
+    #region Reqêtes client
     public void insererClient(string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
     {
         string requete = "INSERT INTO clients (nom,prenom,adresse1,adresse2,fixe,mail,naissance,nationalite,villes_id,civilite_id) VALUES('" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
@@ -108,9 +113,9 @@ class DBConect
 
     }
 
-    public void modifierSalarié(int var)
+    public void modifierClient(int var, string nom, string prénom, string adresse, string fixe, string mail)
     {
-        string requete = "UPDATE .. .";
+        string requete = "UPDATE clients SET nom = '" + nom + "', prenom = '" + prénom + "', adresse1 = '" + adresse + "', fixe = '" + fixe + "', mail ='" + mail + "' WHERE id = " + var + " ;";
 
         MySqlCommand cmd = new MySqlCommand(requete, connection);
         cmd.ExecuteNonQuery();
@@ -127,12 +132,13 @@ class DBConect
         cmd.ExecuteNonQuery();
 
     }
+    #endregion
 
-    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean, string quantite)
+    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean)
     {
         //string requete = "INSERT INTO clients (id,nom,prenom,adresse1,adresse2,fixe,mail,naissance,civilite_id,villes_id,nationalite) VALUES('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
 
-        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`, `quantite`) VALUES (( select' " + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "' from produits ), (select '" + quantite + " 'from mouvement_stock)'";
+        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`) VALUES ('" + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "')";
 
         MySqlCommand cmd = new MySqlCommand(requete, connection);
 
@@ -140,13 +146,6 @@ class DBConect
 
     }
 
-    public void modifierClient(int var)
-    {
-        string requete = "UPDATE .. .";
-
-        MySqlCommand cmd = new MySqlCommand(requete, connection);
-        cmd.ExecuteNonQuery();
-    }
 
     public void supprimerProduit(int var)
     {
@@ -169,5 +168,5 @@ class DBConect
 
     }
 
-   
+
 }
