@@ -20,10 +20,7 @@ namespace PTOuatelse
         private string password;
         private MySqlConnection connection;
         private MySqlDataAdapter mySqlDataAdapter;
-        /*string chaine = null;
-        string nomsProduits = null;
-        string prixAchatProduit = null;
-        string prixVenteProduit = null;*/
+
         public GestionStock()
         {
             InitializeComponent();

@@ -22,7 +22,6 @@ namespace PTOuatelse
         private string password;
         private MySqlConnection connection;
         private MySqlDataAdapter mySqlDataAdapter;
-        string chaine = null;
  
         public GestionSalarie()
         {

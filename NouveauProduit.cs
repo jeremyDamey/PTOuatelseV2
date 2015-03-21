@@ -13,17 +13,6 @@ namespace PTOuatelse
 {
     public partial class NouveauProduit : Form
     {
-       /* private string server;
-        private string database;
-        private string uid;
-        private string password;
-        private string codeP;
-        private string EANP;
-        private string designP;
-        private string achatP;
-        private string venteP;
-        private string TVAP;
-        private MySqlConnection connection;*/
         public NouveauProduit()
         {
             InitializeComponent();
@@ -47,15 +36,7 @@ namespace PTOuatelse
 
         private void NouveauProduit_Load(object sender, EventArgs e)
         {
-            /*server = "info-viviane.iut.bx1";
-            database = "pt_ouatelse1";
-            uid = "pt_ouatelse1";
-            password = "DYwBqVhnNL5SPddK";
-            string connectionString;
-            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
 
-            connection = new MySqlConnection(connectionString);
-            connection.Open();*/
         }
         
     }
