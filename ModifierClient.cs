@@ -69,18 +69,31 @@ namespace PTOuatelse
 
         private void ModifierClient_Load(object sender, EventArgs e)
         {
-            // TODO: cette ligne de code charge les données dans la table 'pt_ouatelse1DataSet.pays'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
-            this.paysTableAdapter.Fill(this.pt_ouatelse1DataSet.pays);
-            // TODO: cette ligne de code charge les données dans la table 'pt_ouatelse1DataSet.villes'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
-            this.villesTableAdapter.Fill(this.pt_ouatelse1DataSet.villes);
-            // TODO: cette ligne de code charge les données dans la table 'pt_ouatelse1DataSet.clients'. Vous pouvez la déplacer ou la supprimer selon vos besoins.
-            this.clientsTableAdapter.Fill(this.pt_ouatelse1DataSet.clients);
 
         }
 
         private void validerClient_Click(object sender, EventArgs e)
         {
+            //ModifierSalarie salarieModif = new ModifierSalarie();
+            DBConect db = new DBConect();
+            db.Initialize();
+            string identifiant;
 
+            //DateTime dateValue;
+            //dateValue = dateTimePicker1.Value;
+            //string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
+            int var = this.id;
+
+            string nom = Nom.Text;
+            string prénom = Prenom.Text;
+            string adresse = Adresse1.Text;
+            string CP = CodePostal.Text;
+            string nomVille = NomVille.Text;
+            string fixe = Téléphone.Text;
+            string mail = Mail.Text;
+            db.modifierSalarié(var, nom, prénom, adresse, fixe, mail);
+            //salarieAjoute.Show();
+            this.Hide();
         }
     }
 }
