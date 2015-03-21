@@ -94,6 +94,7 @@ namespace PTOuatelse
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
+            //Lol
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
