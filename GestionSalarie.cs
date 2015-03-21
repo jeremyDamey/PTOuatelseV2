@@ -60,7 +60,7 @@ namespace PTOuatelse
 
             connection = new MySqlConnection(connectionString); 
 
-            mySqlDataAdapter = new MySqlDataAdapter("select identifiant,nom,prenom,adresse1,fixe,portable,naissance from salaries", connection);
+            mySqlDataAdapter = new MySqlDataAdapter("select id,identifiant,nom,prenom,adresse1,fixe,portable,naissance from salaries", connection);
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
@@ -69,8 +69,8 @@ namespace PTOuatelse
 
         private void supprimerSalarie_Click(object sender, EventArgs e)
         {
-            int var = dataGridView1.CurrentCell.RowIndex;
-            
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            Console.Write(var);
             DBConect db = new DBConect();
             db.Initialize();
             db.supprimerSalarié(var);
