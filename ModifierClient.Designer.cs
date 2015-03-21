@@ -45,7 +45,6 @@
             this.NomVille = new System.Windows.Forms.TextBox();
             this.CodePostal = new System.Windows.Forms.TextBox();
             this.villesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Adresse2 = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
             this.CodeClient = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
@@ -75,6 +74,7 @@
             this.paysTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.paysTableAdapter();
             this.villesTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.villesTableAdapter();
             this.Prenom = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
@@ -161,7 +161,7 @@
             // NomPays
             // 
             this.NomPays.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paysBindingSource, "libelle", true));
-            this.NomPays.Location = new System.Drawing.Point(568, 207);
+            this.NomPays.Location = new System.Drawing.Point(577, 183);
             this.NomPays.Name = "NomPays";
             this.NomPays.Size = new System.Drawing.Size(255, 20);
             this.NomPays.TabIndex = 39;
@@ -174,15 +174,15 @@
             // NomVille
             // 
             this.NomVille.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "villes_id", true));
-            this.NomVille.Location = new System.Drawing.Point(258, 207);
+            this.NomVille.Location = new System.Drawing.Point(315, 183);
             this.NomVille.Name = "NomVille";
-            this.NomVille.Size = new System.Drawing.Size(262, 20);
+            this.NomVille.Size = new System.Drawing.Size(154, 20);
             this.NomVille.TabIndex = 38;
             // 
             // CodePostal
             // 
             this.CodePostal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.villesBindingSource, "code_postal", true));
-            this.CodePostal.Location = new System.Drawing.Point(151, 207);
+            this.CodePostal.Location = new System.Drawing.Point(151, 183);
             this.CodePostal.Name = "CodePostal";
             this.CodePostal.Size = new System.Drawing.Size(100, 20);
             this.CodePostal.TabIndex = 37;
@@ -191,14 +191,6 @@
             // 
             this.villesBindingSource.DataMember = "villes";
             this.villesBindingSource.DataSource = this.pt_ouatelse1DataSet;
-            // 
-            // Adresse2
-            // 
-            this.Adresse2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "adresse2", true));
-            this.Adresse2.Location = new System.Drawing.Point(151, 174);
-            this.Adresse2.Name = "Adresse2";
-            this.Adresse2.Size = new System.Drawing.Size(673, 20);
-            this.Adresse2.TabIndex = 36;
             // 
             // Adresse1
             // 
@@ -274,7 +266,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(526, 210);
+            this.label5.Location = new System.Drawing.Point(517, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 27;
@@ -283,11 +275,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(73, 207);
+            this.label4.Location = new System.Drawing.Point(73, 186);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Ville :";
+            this.label4.Text = "CP :";
             // 
             // label3
             // 
@@ -458,11 +450,21 @@
             this.Prenom.Size = new System.Drawing.Size(159, 20);
             this.Prenom.TabIndex = 47;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(277, 186);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.TabIndex = 48;
+            this.label10.Text = "Ville :";
+            // 
             // ModifierClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(855, 522);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annulerClient);
             this.Controls.Add(this.validerClient);
@@ -473,7 +475,6 @@
             this.Controls.Add(this.NomPays);
             this.Controls.Add(this.NomVille);
             this.Controls.Add(this.CodePostal);
-            this.Controls.Add(this.Adresse2);
             this.Controls.Add(this.Adresse1);
             this.Controls.Add(this.CodeClient);
             this.Controls.Add(this.Nom);
@@ -515,7 +516,6 @@
         private System.Windows.Forms.TextBox NomPays;
         private System.Windows.Forms.TextBox NomVille;
         private System.Windows.Forms.TextBox CodePostal;
-        private System.Windows.Forms.TextBox Adresse2;
         private System.Windows.Forms.TextBox Adresse1;
         private System.Windows.Forms.TextBox CodeClient;
         private System.Windows.Forms.TextBox Nom;
@@ -553,6 +553,7 @@
         private pt_ouatelse1DataSetTableAdapters.paysTableAdapter paysTableAdapter;
         private System.Windows.Forms.BindingSource paysBindingSource;
         private System.Windows.Forms.TextBox Prenom;
+        private System.Windows.Forms.Label label10;
 
     }
 }

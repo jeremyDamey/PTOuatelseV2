@@ -129,6 +129,14 @@ return varNom;
 
     }
 
+    public void modifierClient(int var)
+    {
+        string requete = "UPDATE .. .";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+        cmd.ExecuteNonQuery();
+    }
+
     public void supprimerProduit(int var)
     {
         string requete = "DELETE FROM produits WHERE id = " + var + ";";

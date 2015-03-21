@@ -51,7 +51,8 @@ namespace PTOuatelse
 
         private void modifierClient_Click(object sender, EventArgs e)
         {
-            ModifierClient modifier = new ModifierClient();
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            ModifierClient modifier = new ModifierClient(var);
             modifier.Show();
         }
 
