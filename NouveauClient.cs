@@ -65,7 +65,7 @@ namespace PTOuatelse
 
         private void Mail_TextChanged(object sender, EventArgs e)
         {
-            this.Text = Mail.Text; 
+            this.Text = Mail.Text;
         }
 
         private void valider_Click(object sender, EventArgs e)
@@ -80,14 +80,14 @@ namespace PTOuatelse
             string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
 
             identifiant = Prenom.Text.Substring(0, 1) + Nom.Text;
-            db.insererClient (Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate);
+            db.insererClient(Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate);
             clientAjoute.Show();
             this.Hide();
         }
 
         private void NouveauClient_Load(object sender, EventArgs e)
         {
-       
+
 
         }
     }
