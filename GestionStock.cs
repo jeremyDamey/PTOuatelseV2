@@ -46,7 +46,12 @@ namespace PTOuatelse
 
         private void destockerProduit_Click(object sender, EventArgs e)
         {
-
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            Console.Write(var);
+            DBConect db = new DBConect();
+            db.Initialize();
+            db.destockerProduit(var);
+            this.Hide();
         }
 
         private void supprimerProduit_Click(object sender, EventArgs e)
@@ -85,7 +90,7 @@ namespace PTOuatelse
 
             connection = new MySqlConnection(connectionString);
 
-            mySqlDataAdapter = new MySqlDataAdapter("select id,prix_achat,prix_vente,tva,code_ean from produits", connection);
+            mySqlDataAdapter = new MySqlDataAdapter("select nom,prix_achat,prix_vente,quantite,tva,code_ean from produits inner join mouvement_stock where produits.id = produits_id", connection);
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];

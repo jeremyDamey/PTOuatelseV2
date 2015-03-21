@@ -130,5 +130,15 @@ return varNom;
         cmd.ExecuteNonQuery();
 
     }
+    public void destockerProduit(int var)
+    {
+        string requete = "UPDATE mouvement_stock set quantite = 0 where produits_id in (select id FROM produits where id = " + var + ");";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        //Execute command
+        cmd.ExecuteNonQuery();
+
+    }
 
 }
