@@ -108,6 +108,7 @@
             // 
             this.NomPays.Location = new System.Drawing.Point(609, 210);
             this.NomPays.Name = "NomPays";
+            this.NomPays.ReadOnly = true;
             this.NomPays.Size = new System.Drawing.Size(238, 20);
             this.NomPays.TabIndex = 62;
             // 
@@ -139,6 +140,7 @@
             this.idSalarie.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "id", true));
             this.idSalarie.Location = new System.Drawing.Point(175, 124);
             this.idSalarie.Name = "idSalarie";
+            this.idSalarie.ReadOnly = true;
             this.idSalarie.Size = new System.Drawing.Size(238, 20);
             this.idSalarie.TabIndex = 57;
             // 
@@ -312,6 +314,7 @@
             // 
             this.CodePostalMag.Location = new System.Drawing.Point(456, 180);
             this.CodePostalMag.Name = "CodePostalMag";
+            this.CodePostalMag.ReadOnly = true;
             this.CodePostalMag.Size = new System.Drawing.Size(100, 20);
             this.CodePostalMag.TabIndex = 70;
             // 
@@ -320,6 +323,7 @@
             this.VilleMag.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse2", true));
             this.VilleMag.Location = new System.Drawing.Point(609, 180);
             this.VilleMag.Name = "VilleMag";
+            this.VilleMag.ReadOnly = true;
             this.VilleMag.Size = new System.Drawing.Size(238, 20);
             this.VilleMag.TabIndex = 71;
             // 
@@ -328,6 +332,7 @@
             this.AdresseMag.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse1", true));
             this.AdresseMag.Location = new System.Drawing.Point(175, 177);
             this.AdresseMag.Name = "AdresseMag";
+            this.AdresseMag.ReadOnly = true;
             this.AdresseMag.Size = new System.Drawing.Size(238, 20);
             this.AdresseMag.TabIndex = 72;
             // 
