@@ -61,7 +61,32 @@ namespace PTOuatelse
 
         private void supprimerClient_Click(object sender, EventArgs e)
         {
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
 
+            server = "info-viviane.iut.bx1";
+            database = "pt_ouatelse1";
+            uid = "pt_ouatelse1";
+            password = "DYwBqVhnNL5SPddK";
+            string connectionString;
+            connectionString = "SERVER=" + server + ";" + "DATABASE=" + database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+
+            connection = new MySqlConnection(connectionString);
+            connection.Open();
+
+            string req = "DELETE FROM factures WHERE id IN (SELECT id From clients where id = " + var + ")";
+            string req2 = "DELETE FROM factures_produits WHERE id IN (SELECT id From clients where id = " + var + ")";
+            string req3 = "DELETE FROM produits WHERE id IN (SELECT id From clients where id = " + var + ")";
+            string requete = "DELETE FROM clients where id = " + var + ")";
+
+            MySqlCommand cmd = new MySqlCommand(req, connection);
+            MySqlCommand cmd2 = new MySqlCommand(requete, connection);
+            cmd.ExecuteNonQuery();
+            cmd2.ExecuteNonQuery();
+            MySqlDataReader mySqlDataReader = cmd.ExecuteReader();
+            MySqlDataReader mySqlDataReader2 = cmd2.ExecuteReader();
+            mySqlDataReader.Close();
+            mySqlDataReader2.Close();
+            this.Refresh();
         }
     }
 }
