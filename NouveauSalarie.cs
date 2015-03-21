@@ -15,11 +15,15 @@ namespace PTOuatelse
         public NouveauSalarie()
         {
             InitializeComponent();
+            Genre.Items.Add("Mr.");
+            Genre.Items.Add("Mme.");
+
         }
 
         private void annuler_Click(object sender, EventArgs e)
         {
             this.Hide();
+            
         }
 
 
