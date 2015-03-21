@@ -74,6 +74,14 @@ return varNom;
 
     }
 
+    public void modifierSalarié(int var, string nom, string prénom, string adresse, string fixe, string mail)
+    {
+        string requete = "UPDATE salaries SET nom = '" + nom + "', prenom = '" + prénom + "', adresse1 = '" + adresse + "', fixe = '" + fixe + "', mail ='" + mail + "' WHERE id = " + var + " ;";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+        cmd.ExecuteNonQuery();
+    }
+
     public void supprimerSalarié (int var)
     {
         string requete = "DELETE FROM salaries WHERE id = " + var + ";";

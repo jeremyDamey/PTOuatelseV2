@@ -258,6 +258,7 @@
             this.validerModifSalarie.TabIndex = 66;
             this.validerModifSalarie.Text = "Valider";
             this.validerModifSalarie.UseVisualStyleBackColor = true;
+            this.validerModifSalarie.Click += new System.EventHandler(this.validerModifSalarie_Click);
             // 
             // annulerModifierSalarie
             // 
