@@ -28,16 +28,20 @@ class DBConect
         string varNom="";
         MySqlCommand myCommand = new MySqlCommand(req,connection);
         MySqlDataReader mySqDataReader = myCommand.ExecuteReader();
-        while (mySqDataReader.Read()){
-        if(mySqDataReader[variable]!= System.DBNull.Value){
-            varNom += mySqDataReader[variable].ToString() + "\n";
-        }else{
-            varNom = " ";
+        while (mySqDataReader.Read())
+        {
+            if(mySqDataReader[variable]!= System.DBNull.Value)
+            {
+                varNom += mySqDataReader[variable].ToString() + "\n";
+            }
+            else
+            {
+                varNom = " ";
+            }
         }
-    }
         mySqDataReader.Close();
-return varNom;
-}
+        return varNom;
+    }
 
     public bool validerConnexion(string req, string variable, string id)
     {

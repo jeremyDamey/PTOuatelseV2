@@ -121,6 +121,7 @@
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produitsBindingSource, "id", true));
             this.textBox1.Location = new System.Drawing.Point(150, 137);
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(120, 20);
             this.textBox1.TabIndex = 50;
             // 
@@ -148,6 +149,7 @@
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.produitsBindingSource, "code_ean", true));
             this.textBox2.Location = new System.Drawing.Point(366, 137);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(258, 20);
             this.textBox2.TabIndex = 52;
             // 
