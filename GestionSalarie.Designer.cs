@@ -58,6 +58,7 @@
             this.supprimerSalarie.TabIndex = 12;
             this.supprimerSalarie.Text = "Supprimer Salarié";
             this.supprimerSalarie.UseVisualStyleBackColor = true;
+            this.supprimerSalarie.Click += new System.EventHandler(this.supprimerSalarie_Click);
             // 
             // modifierSalarie
             // 

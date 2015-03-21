@@ -77,7 +77,7 @@ namespace PTOuatelse
             string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
 
             identifiant = Prenom.Text.Substring(0, 1) + Nom.Text;
-            db.insertSalarié(identifiant,textBox_Password.Text,Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate);
+            db.insererSalarié(identifiant,textBox_Password.Text,Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate);
             salarieAjoute.Show();
             this.Hide();
           
