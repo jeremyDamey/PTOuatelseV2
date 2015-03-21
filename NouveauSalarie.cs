@@ -75,21 +75,23 @@ namespace PTOuatelse
             DBConect db = new DBConect();
             db.Initialize();
             string identifiant;
+
             int civ;
+
             if (Genre.SelectedIndex == 0)
                 civ = 1;
             else
                 civ = 2;
 
-            Console.Write(civ);
             DateTime dateValue;
+
             dateValue = dateTimePicker1.Value;
             string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
 
             identifiant = Prenom.Text.Substring(0, 1) + Nom.Text;
             db.insererSalarié(identifiant,textBox_Password.Text,Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate,civ);
             salarieAjoute.Show();
-            this.Hide();//sqdq
+            this.Hide();
           
         }
 
