@@ -46,6 +46,7 @@ namespace PTOuatelse
         {
             NouveauClient nouveau = new NouveauClient();
             nouveau.Show();
+            this.Hide();
         }
 
         private void modifierClient_Click(object sender, EventArgs e)

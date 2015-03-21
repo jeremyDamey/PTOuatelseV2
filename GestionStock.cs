@@ -39,6 +39,7 @@ namespace PTOuatelse
         {
             NouveauProduit prod = new NouveauProduit();
             prod.Show();
+            this.Hide();
         }
 
         private void reaprovisionnerProduit_Click(object sender, EventArgs e)

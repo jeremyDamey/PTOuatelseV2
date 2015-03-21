@@ -34,6 +34,7 @@ namespace PTOuatelse
         {
             NouveauSalarie nouveau = new NouveauSalarie();
             nouveau.Show();
+            this.Hide();
         }
 
         private void modifierSalarie_Click(object sender, EventArgs e)
