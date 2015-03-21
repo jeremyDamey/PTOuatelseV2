@@ -60,17 +60,27 @@ namespace PTOuatelse
 
         private void DateNaissance_TextChanged(object sender, EventArgs e)
         {
-            this.Text = DateNaissance.Text;
+
         }
 
         private void Mail_TextChanged(object sender, EventArgs e)
         {
-            this.Text = Mail.Text; //RIEN
+            this.Text = Mail.Text; 
         }
 
         private void valider_Click(object sender, EventArgs e)
         {
             ClientAjoute clientAjoute = new ClientAjoute();
+            DBConect db = new DBConect();
+            db.Initialize();
+            string identifiant;
+
+            DateTime dateValue;
+            dateValue = dateTimePicker1.Value;
+            string MySQLFormatDate = dateValue.ToString("yyyy-MM-dd HH:mm:ss");
+
+            identifiant = Prenom.Text.Substring(0, 1) + Nom.Text;
+            db.insererClient(identifiant, Nom.Text, Prenom.Text, Adresse1.Text, Adresse2.Text, Téléphone.Text, Mail.Text, MySQLFormatDate);
             clientAjoute.Show();
             this.Hide();
         }

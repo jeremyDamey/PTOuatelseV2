@@ -44,7 +44,6 @@
             this.Fréquence = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Notes = new System.Windows.Forms.TabPage();
             this.Mail = new System.Windows.Forms.TextBox();
-            this.DateNaissance = new System.Windows.Forms.TextBox();
             this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pt_ouatelse1DataSet = new PTOuatelse.pt_ouatelse1DataSet();
             this.Téléphone = new System.Windows.Forms.TextBox();
@@ -69,6 +68,7 @@
             this.clientsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.clientsTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
             this.Prenom = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabControl1.SuspendLayout();
             this.Factures.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -196,14 +196,6 @@
             this.Mail.Size = new System.Drawing.Size(672, 20);
             this.Mail.TabIndex = 65;
             this.Mail.TextChanged += new System.EventHandler(this.Mail_TextChanged);
-            // 
-            // DateNaissance
-            // 
-            this.DateNaissance.Location = new System.Drawing.Point(662, 239);
-            this.DateNaissance.Name = "DateNaissance";
-            this.DateNaissance.Size = new System.Drawing.Size(188, 20);
-            this.DateNaissance.TabIndex = 64;
-            this.DateNaissance.TextChanged += new System.EventHandler(this.DateNaissance_TextChanged);
             // 
             // clientsBindingSource
             // 
@@ -414,17 +406,24 @@
             this.Prenom.Size = new System.Drawing.Size(147, 20);
             this.Prenom.TabIndex = 69;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(661, 238);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 70;
+            // 
             // NouveauClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 519);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.valider);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.Mail);
-            this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
             this.Controls.Add(this.NomPays);
             this.Controls.Add(this.NomVille);
@@ -474,7 +473,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Fréquence;
         private System.Windows.Forms.TabPage Notes;
         private System.Windows.Forms.TextBox Mail;
-        private System.Windows.Forms.TextBox DateNaissance;
         private System.Windows.Forms.TextBox Téléphone;
         private System.Windows.Forms.TextBox NomPays;
         private System.Windows.Forms.TextBox NomVille;
@@ -499,5 +497,6 @@
         private pt_ouatelse1DataSetTableAdapters.clientsTableAdapter clientsTableAdapter;
         private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox Prenom;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
