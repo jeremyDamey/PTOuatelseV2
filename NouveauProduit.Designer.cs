@@ -54,6 +54,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.produitsTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.produitsTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.mouvementstockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facturesproduitsBindingSource)).BeginInit();
@@ -86,7 +88,7 @@
             // 
             // annuler
             // 
-            this.annuler.Location = new System.Drawing.Point(406, 226);
+            this.annuler.Location = new System.Drawing.Point(400, 276);
             this.annuler.Name = "annuler";
             this.annuler.Size = new System.Drawing.Size(75, 23);
             this.annuler.TabIndex = 81;
@@ -96,7 +98,7 @@
             // 
             // ajouter
             // 
-            this.ajouter.Location = new System.Drawing.Point(183, 226);
+            this.ajouter.Location = new System.Drawing.Point(183, 276);
             this.ajouter.Name = "ajouter";
             this.ajouter.Size = new System.Drawing.Size(75, 23);
             this.ajouter.TabIndex = 80;
@@ -253,11 +255,29 @@
             this.tableAdapterManager.UpdateOrder = PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.villesTableAdapter = null;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(72, 232);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 13);
+            this.label8.TabIndex = 82;
+            this.label8.Text = "Quantité :";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(138, 232);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 83;
+            // 
             // NouveauProduit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(660, 268);
+            this.ClientSize = new System.Drawing.Size(660, 346);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.annuler);
             this.Controls.Add(this.ajouter);
             this.Controls.Add(this.textBox6);
@@ -312,5 +332,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private pt_ouatelse1DataSetTableAdapters.produitsTableAdapter produitsTableAdapter;
         private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }

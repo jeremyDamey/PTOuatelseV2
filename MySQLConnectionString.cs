@@ -129,11 +129,11 @@ class DBConect
 
     }
 
-    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean)
+    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean, string quantite)
     {
         //string requete = "INSERT INTO clients (id,nom,prenom,adresse1,adresse2,fixe,mail,naissance,civilite_id,villes_id,nationalite) VALUES('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
 
-        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`) VALUES ('" + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "')";
+        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`, `quantite`) VALUES (( select' " + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "' from produits ), (select '" + quantite + " 'from mouvement_stock)'";
 
         MySqlCommand cmd = new MySqlCommand(requete, connection);
 
