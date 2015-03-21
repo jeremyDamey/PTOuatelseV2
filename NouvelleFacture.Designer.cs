@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.date = new System.Windows.Forms.TextBox();
             this.reference = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.codeClient = new System.Windows.Forms.TextBox();
@@ -71,6 +70,7 @@
             this.TTC = new System.Windows.Forms.TextBox();
             this.ValiderNouvelleFacture = new System.Windows.Forms.Button();
             this.AnnulerNouvelleFacture = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -112,13 +112,6 @@
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "Date : ";
-            // 
-            // date
-            // 
-            this.date.Location = new System.Drawing.Point(157, 96);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(100, 20);
-            this.date.TabIndex = 4;
             // 
             // reference
             // 
@@ -431,11 +424,19 @@
             this.AnnulerNouvelleFacture.UseVisualStyleBackColor = true;
             this.AnnulerNouvelleFacture.Click += new System.EventHandler(this.AnnulerNouvelleFacture_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(157, 96);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(187, 20);
+            this.dateTimePicker1.TabIndex = 37;
+            // 
             // NouvelleFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 651);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.AnnulerNouvelleFacture);
             this.Controls.Add(this.ValiderNouvelleFacture);
             this.Controls.Add(this.TTC);
@@ -460,7 +461,6 @@
             this.Controls.Add(this.codeClient);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.reference);
-            this.Controls.Add(this.date);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -482,7 +482,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox date;
         private System.Windows.Forms.TextBox reference;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox codeClient;
@@ -520,5 +519,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn prixHT;
         private System.Windows.Forms.Button ValiderNouvelleFacture;
         private System.Windows.Forms.Button AnnulerNouvelleFacture;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
