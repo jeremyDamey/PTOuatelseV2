@@ -90,7 +90,7 @@ namespace PTOuatelse
 
             connection = new MySqlConnection(connectionString);
 
-            mySqlDataAdapter = new MySqlDataAdapter("select nom,prix_achat,prix_vente,quantite,tva,code_ean from produits inner join mouvement_stock where produits.id = produits_id", connection);
+            mySqlDataAdapter = new MySqlDataAdapter("select produits.id,nom,prix_achat,prix_vente,tva,code_ean from produits", connection);
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];
