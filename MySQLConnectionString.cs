@@ -85,4 +85,27 @@ return varNom;
 
     }
 
+    public void insererClient(string identifiant, string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
+    {
+        //string requete = "INSERT INTO clients (id,nom,prenom,adresse1,adresse2,fixe,mail,naissance,civilite_id,villes_id,nationalite) VALUES('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
+
+        string requete = "INSERT INTO `pt_ouatelse1`.`clients` (`id`, `nom`, `prenom`, `adresse1`, `adresse2`, `fixe`, `mail`, `naissance`, `notes`, `civilite_id`, `villes_id`, `nationalite`) VALUES ('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        cmd.ExecuteNonQuery();
+
+    }
+
+    public void supprimerClient(int var)
+    {
+        string requete = "DELETE FROM clients WHERE id = " + var + ";";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        //Execute command
+        cmd.ExecuteNonQuery();
+
+    }
+
 }
