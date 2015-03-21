@@ -68,9 +68,9 @@ class DBConect
 
 
     #region Requêtes salarié
-    public void insererSalarié(string identifiant, string password, string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance)
+    public void insererSalarié(string identifiant, string password, string nom, string prénom, string adresse1, string adresse2, string tel, string mail, string naissance,int civ)
     {
-        string requete = "INSERT INTO salaries (identifiant,mot_de_passe,nom,prenom,adresse1,adresse2,fixe,mail,naissance,roles_id,magasin_id,villes_id,pays_id,civilite_id) VALUES('" + identifiant + "','" + password + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1','1','1')";
+        string requete = "INSERT INTO salaries (identifiant,mot_de_passe,nom,prenom,adresse1,adresse2,fixe,mail,naissance,roles_id,magasin_id,villes_id,pays_id,civilite_id) VALUES('" + identifiant + "','" + password + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1','1','"+ civ +"')";
 
 
 
