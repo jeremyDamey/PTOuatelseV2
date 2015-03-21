@@ -24,7 +24,7 @@ namespace PTOuatelse
             DBConect db = new DBConect();
             db.Initialize();
 
-            db.insererProduit(textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox5.Text,textBox6.Text,textBox7.Text);
+            //db.insererProduit(textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox5.Text,textBox6.Text,textBox7.Text);
             produitAjoute.Show();
             this.Hide();
         }
