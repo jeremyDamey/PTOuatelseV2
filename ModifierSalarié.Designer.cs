@@ -36,11 +36,10 @@
             this.DateNaissance = new System.Windows.Forms.TextBox();
             this.Téléphone = new System.Windows.Forms.TextBox();
             this.NomPays = new System.Windows.Forms.TextBox();
-            this.NomVille = new System.Windows.Forms.TextBox();
-            this.CodePostal = new System.Windows.Forms.TextBox();
-            this.Adresse2 = new System.Windows.Forms.TextBox();
+            this.CodePostalSal = new System.Windows.Forms.TextBox();
+            this.VilleSal = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
-            this.CodeSalarie = new System.Windows.Forms.TextBox();
+            this.idSalarie = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Genre = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -58,6 +57,13 @@
             this.salariesTableAdapter = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.salariesTableAdapter();
             this.tableAdapterManager = new PTOuatelse.pt_ouatelse1DataSetTableAdapters.TableAdapterManager();
             this.Prenom = new System.Windows.Forms.TextBox();
+            this.AdrMag = new System.Windows.Forms.Label();
+            this.CodePostalMag = new System.Windows.Forms.TextBox();
+            this.VilleMag = new System.Windows.Forms.TextBox();
+            this.AdresseMag = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.salariesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pt_ouatelse1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,48 +106,41 @@
             // 
             // NomPays
             // 
-            this.NomPays.Location = new System.Drawing.Point(592, 210);
+            this.NomPays.Location = new System.Drawing.Point(609, 210);
             this.NomPays.Name = "NomPays";
-            this.NomPays.Size = new System.Drawing.Size(255, 20);
+            this.NomPays.Size = new System.Drawing.Size(238, 20);
             this.NomPays.TabIndex = 62;
             // 
-            // NomVille
+            // CodePostalSal
             // 
-            this.NomVille.Location = new System.Drawing.Point(282, 210);
-            this.NomVille.Name = "NomVille";
-            this.NomVille.Size = new System.Drawing.Size(262, 20);
-            this.NomVille.TabIndex = 61;
+            this.CodePostalSal.Location = new System.Drawing.Point(456, 155);
+            this.CodePostalSal.Name = "CodePostalSal";
+            this.CodePostalSal.Size = new System.Drawing.Size(100, 20);
+            this.CodePostalSal.TabIndex = 60;
             // 
-            // CodePostal
+            // VilleSal
             // 
-            this.CodePostal.Location = new System.Drawing.Point(175, 210);
-            this.CodePostal.Name = "CodePostal";
-            this.CodePostal.Size = new System.Drawing.Size(100, 20);
-            this.CodePostal.TabIndex = 60;
-            // 
-            // Adresse2
-            // 
-            this.Adresse2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse2", true));
-            this.Adresse2.Location = new System.Drawing.Point(175, 177);
-            this.Adresse2.Name = "Adresse2";
-            this.Adresse2.Size = new System.Drawing.Size(673, 20);
-            this.Adresse2.TabIndex = 59;
+            this.VilleSal.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse2", true));
+            this.VilleSal.Location = new System.Drawing.Point(609, 154);
+            this.VilleSal.Name = "VilleSal";
+            this.VilleSal.Size = new System.Drawing.Size(238, 20);
+            this.VilleSal.TabIndex = 59;
             // 
             // Adresse1
             // 
             this.Adresse1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse1", true));
             this.Adresse1.Location = new System.Drawing.Point(175, 151);
             this.Adresse1.Name = "Adresse1";
-            this.Adresse1.Size = new System.Drawing.Size(673, 20);
+            this.Adresse1.Size = new System.Drawing.Size(238, 20);
             this.Adresse1.TabIndex = 58;
             // 
-            // CodeSalarie
+            // idSalarie
             // 
-            this.CodeSalarie.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "id", true));
-            this.CodeSalarie.Location = new System.Drawing.Point(175, 124);
-            this.CodeSalarie.Name = "CodeSalarie";
-            this.CodeSalarie.Size = new System.Drawing.Size(238, 20);
-            this.CodeSalarie.TabIndex = 57;
+            this.idSalarie.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "id", true));
+            this.idSalarie.Location = new System.Drawing.Point(175, 124);
+            this.idSalarie.Name = "idSalarie";
+            this.idSalarie.Size = new System.Drawing.Size(238, 20);
+            this.idSalarie.TabIndex = 57;
             // 
             // Nom
             // 
@@ -189,7 +188,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(550, 213);
+            this.label5.Location = new System.Drawing.Point(571, 213);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 50;
@@ -198,11 +197,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(97, 210);
+            this.label4.Location = new System.Drawing.Point(419, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 49;
-            this.label4.Text = "Ville :";
+            this.label4.Text = "CP :";
             // 
             // label3
             // 
@@ -218,9 +217,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(97, 124);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 47;
-            this.label2.Text = "Code salarié :";
+            this.label2.Text = "Identifiant  :";
             // 
             // pictureBox1
             // 
@@ -299,11 +298,77 @@
             this.Prenom.Size = new System.Drawing.Size(159, 20);
             this.Prenom.TabIndex = 68;
             // 
+            // AdrMag
+            // 
+            this.AdrMag.AutoSize = true;
+            this.AdrMag.Location = new System.Drawing.Point(91, 180);
+            this.AdrMag.Name = "AdrMag";
+            this.AdrMag.Size = new System.Drawing.Size(78, 13);
+            this.AdrMag.TabIndex = 69;
+            this.AdrMag.Text = "Adresse Mag. :";
+            // 
+            // CodePostalMag
+            // 
+            this.CodePostalMag.Location = new System.Drawing.Point(456, 180);
+            this.CodePostalMag.Name = "CodePostalMag";
+            this.CodePostalMag.Size = new System.Drawing.Size(100, 20);
+            this.CodePostalMag.TabIndex = 70;
+            // 
+            // VilleMag
+            // 
+            this.VilleMag.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse2", true));
+            this.VilleMag.Location = new System.Drawing.Point(609, 180);
+            this.VilleMag.Name = "VilleMag";
+            this.VilleMag.Size = new System.Drawing.Size(238, 20);
+            this.VilleMag.TabIndex = 71;
+            // 
+            // AdresseMag
+            // 
+            this.AdresseMag.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.salariesBindingSource, "adresse1", true));
+            this.AdresseMag.Location = new System.Drawing.Point(175, 177);
+            this.AdresseMag.Name = "AdresseMag";
+            this.AdresseMag.Size = new System.Drawing.Size(238, 20);
+            this.AdresseMag.TabIndex = 72;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(419, 183);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(27, 13);
+            this.label10.TabIndex = 73;
+            this.label10.Text = "CP :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(571, 158);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 13);
+            this.label11.TabIndex = 74;
+            this.label11.Text = "Ville :";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(571, 183);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 13);
+            this.label12.TabIndex = 75;
+            this.label12.Text = "Ville :";
+            // 
             // ModifierSalarié
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 360);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.AdresseMag);
+            this.Controls.Add(this.VilleMag);
+            this.Controls.Add(this.CodePostalMag);
+            this.Controls.Add(this.AdrMag);
             this.Controls.Add(this.Prenom);
             this.Controls.Add(this.annulerModifierSalarie);
             this.Controls.Add(this.validerModifSalarie);
@@ -311,11 +376,10 @@
             this.Controls.Add(this.DateNaissance);
             this.Controls.Add(this.Téléphone);
             this.Controls.Add(this.NomPays);
-            this.Controls.Add(this.NomVille);
-            this.Controls.Add(this.CodePostal);
-            this.Controls.Add(this.Adresse2);
+            this.Controls.Add(this.CodePostalSal);
+            this.Controls.Add(this.VilleSal);
             this.Controls.Add(this.Adresse1);
-            this.Controls.Add(this.CodeSalarie);
+            this.Controls.Add(this.idSalarie);
             this.Controls.Add(this.Nom);
             this.Controls.Add(this.Genre);
             this.Controls.Add(this.label9);
@@ -345,11 +409,10 @@
         private System.Windows.Forms.TextBox DateNaissance;
         private System.Windows.Forms.TextBox Téléphone;
         private System.Windows.Forms.TextBox NomPays;
-        private System.Windows.Forms.TextBox NomVille;
-        private System.Windows.Forms.TextBox CodePostal;
-        private System.Windows.Forms.TextBox Adresse2;
+        private System.Windows.Forms.TextBox CodePostalSal;
+        private System.Windows.Forms.TextBox VilleSal;
         private System.Windows.Forms.TextBox Adresse1;
-        private System.Windows.Forms.TextBox CodeSalarie;
+        private System.Windows.Forms.TextBox idSalarie;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.ComboBox Genre;
         private System.Windows.Forms.Label label9;
@@ -369,5 +432,12 @@
         private pt_ouatelse1DataSetTableAdapters.salariesTableAdapter salariesTableAdapter;
         private pt_ouatelse1DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox Prenom;
+        private System.Windows.Forms.Label AdrMag;
+        private System.Windows.Forms.TextBox CodePostalMag;
+        private System.Windows.Forms.TextBox VilleMag;
+        private System.Windows.Forms.TextBox AdresseMag;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -34,7 +34,6 @@
             this.NomPays = new System.Windows.Forms.TextBox();
             this.NomVille = new System.Windows.Forms.TextBox();
             this.CodePostal = new System.Windows.Forms.TextBox();
-            this.Adresse2 = new System.Windows.Forms.TextBox();
             this.Adresse1 = new System.Windows.Forms.TextBox();
             this.Nom = new System.Windows.Forms.TextBox();
             this.Genre = new System.Windows.Forms.ComboBox();
@@ -53,6 +52,7 @@
             this.label_Password = new System.Windows.Forms.Label();
             this.textBox_Password = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Adresse2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,14 +95,6 @@
             this.CodePostal.Size = new System.Drawing.Size(100, 20);
             this.CodePostal.TabIndex = 81;
             this.CodePostal.TextChanged += new System.EventHandler(this.CodePostal_TextChanged);
-            // 
-            // Adresse2
-            // 
-            this.Adresse2.Location = new System.Drawing.Point(149, 181);
-            this.Adresse2.Name = "Adresse2";
-            this.Adresse2.Size = new System.Drawing.Size(673, 20);
-            this.Adresse2.TabIndex = 80;
-            this.Adresse2.TextChanged += new System.EventHandler(this.Adresse2_TextChanged);
             // 
             // Adresse1
             // 
@@ -263,6 +255,14 @@
             this.dateTimePicker1.TabIndex = 93;
             this.dateTimePicker1.Value = new System.DateTime(2015, 3, 20, 0, 0, 0, 0);
             // 
+            // Adresse2
+            // 
+            this.Adresse2.Location = new System.Drawing.Point(149, 181);
+            this.Adresse2.Name = "Adresse2";
+            this.Adresse2.Size = new System.Drawing.Size(673, 20);
+            this.Adresse2.TabIndex = 80;
+            this.Adresse2.TextChanged += new System.EventHandler(this.Adresse2_TextChanged);
+            // 
             // NouveauSalarie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -308,7 +308,6 @@
         private System.Windows.Forms.TextBox NomPays;
         private System.Windows.Forms.TextBox NomVille;
         private System.Windows.Forms.TextBox CodePostal;
-        private System.Windows.Forms.TextBox Adresse2;
         private System.Windows.Forms.TextBox Adresse1;
         private System.Windows.Forms.TextBox Nom;
         private System.Windows.Forms.ComboBox Genre;
@@ -327,6 +326,7 @@
         private System.Windows.Forms.Label label_Password;
         private System.Windows.Forms.TextBox textBox_Password;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox Adresse2;
 
     }
 }

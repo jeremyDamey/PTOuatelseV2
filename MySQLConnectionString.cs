@@ -97,6 +97,15 @@ return varNom;
 
     }
 
+    public void modifierSalarié(int var)
+    {
+        string requete = "UPDATE .. .";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+        cmd.ExecuteNonQuery();
+    }
+
+
     public void supprimerClient(int var)
     {
         string requete = "DELETE FROM clients WHERE id = " + var + ";";
@@ -141,4 +150,5 @@ return varNom;
 
     }
 
+   
 }
