@@ -85,4 +85,9 @@ return varNom;
 
     }
 
+    public void modifierSalarié (int var)
+    {
+        string requete = "UPDATE ";
+    }
+
 }

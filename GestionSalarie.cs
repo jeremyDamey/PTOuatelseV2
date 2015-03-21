@@ -22,7 +22,7 @@ namespace PTOuatelse
         private string password;
         private MySqlConnection connection;
         private MySqlDataAdapter mySqlDataAdapter;
-        string chaine = null;
+   
  
         public GestionSalarie()
         {
@@ -38,7 +38,8 @@ namespace PTOuatelse
 
         private void modifierSalarie_Click(object sender, EventArgs e)
         {
-            ModifierSalarié modifier = new ModifierSalarié();
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            ModifierSalarié modifier = new ModifierSalarié(var);
             modifier.Show();
         }
 
