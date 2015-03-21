@@ -20,10 +20,10 @@ namespace PTOuatelse
         private string password;
         private MySqlConnection connection;
         private MySqlDataAdapter mySqlDataAdapter;
-        string chaine = null;
+        /*string chaine = null;
         string nomsProduits = null;
         string prixAchatProduit = null;
-        string prixVenteProduit = null;
+        string prixVenteProduit = null;*/
         public GestionStock()
         {
             InitializeComponent();
@@ -53,7 +53,12 @@ namespace PTOuatelse
 
         private void supprimerProduit_Click(object sender, EventArgs e)
         {
-
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            Console.Write(var);
+            DBConect db = new DBConect();
+            db.Initialize();
+            db.supprimerProduit(var);
+            this.Hide();
         }
 
         private void rechercher_TextChanged(object sender, EventArgs e)

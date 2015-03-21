@@ -108,4 +108,27 @@ return varNom;
 
     }
 
+    public void insererProduit(string identifiant, string designation, string prix_achat, string prix_vente, string tva, string code_ean)
+    {
+        //string requete = "INSERT INTO clients (id,nom,prenom,adresse1,adresse2,fixe,mail,naissance,civilite_id,villes_id,nationalite) VALUES('" + identifiant + "','" + "','" + nom + "','" + prénom + "','" + adresse1 + "','" + adresse2 + "','" + tel + "','" + mail + "','" + naissance + "','1','1','1')";
+
+        string requete = "INSERT INTO `pt_ouatelse1`.`produits` (`id`, `designation`, `prix_achat`, `prix_vente`, `tva`, `code_ean`) VALUES ('" + identifiant + "','" + designation + "','" + prix_achat + "','" + prix_vente + "','" + tva + "','" + code_ean + "')";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        cmd.ExecuteNonQuery();
+
+    }
+
+    public void supprimerProduit(int var)
+    {
+        string requete = "DELETE FROM produits WHERE id = " + var + ";";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        //Execute command
+        cmd.ExecuteNonQuery();
+
+    }
+
 }
