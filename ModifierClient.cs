@@ -92,7 +92,8 @@ namespace PTOuatelse
             string fixe = Téléphone.Text;
             string mail = Mail.Text;
             db.modifierClient(var, nom, prénom, adresse, fixe, mail);
-            //salarieAjoute.Show();
+            ClientModifie clientModifie = new ClientModifie();
+            clientModifie.Show();
             this.Hide();
         }
     }

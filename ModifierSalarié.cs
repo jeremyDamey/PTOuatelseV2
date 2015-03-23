@@ -101,7 +101,8 @@ namespace PTOuatelse
             string fixe = Téléphone.Text;
             string mail = Mail.Text;
             db.modifierSalarié(var, nom, prénom, adresse, fixe, mail);
-            //salarieAjoute.Show();
+            SalarieModifie salarieModifie = new SalarieModifie();
+            salarieModifie.Show();
             this.Hide();
         }
     }

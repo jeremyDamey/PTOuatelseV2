@@ -102,6 +102,12 @@
     <Compile Include="ClientAjoute.Designer.cs">
       <DependentUpon>ClientAjoute.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientModifie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientModifie.Designer.cs">
+      <DependentUpon>ClientModifie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,12 @@
     <Compile Include="ProduitAjoute.Designer.cs">
       <DependentUpon>ProduitAjoute.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProduitModifie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProduitModifie.Designer.cs">
+      <DependentUpon>ProduitModifie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="pt_ouatelse1DataSet.Designer.cs">
@@ -206,6 +218,12 @@
     <Compile Include="SalarieAjoute.Designer.cs">
       <DependentUpon>SalarieAjoute.cs</DependentUpon>
     </Compile>
+    <Compile Include="SalarieModifie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalarieModifie.Designer.cs">
+      <DependentUpon>SalarieModifie.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Accueil.resx">
       <DependentUpon>Accueil.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientAjoute.resx">
       <DependentUpon>ClientAjoute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientModifie.resx">
+      <DependentUpon>ClientModifie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>
@@ -260,6 +281,9 @@
     <EmbeddedResource Include="ProduitAjoute.resx">
       <DependentUpon>ProduitAjoute.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProduitModifie.resx">
+      <DependentUpon>ProduitModifie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -270,6 +294,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SalarieModifie.resx">
+      <DependentUpon>SalarieModifie.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
