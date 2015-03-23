@@ -74,6 +74,8 @@ namespace PTOuatelse
             ProduitModifie produitModifie = new ProduitModifie();
             produitModifie.Show();
             this.Hide();
+            ProduitModifie produitModifie = new ProduitModifie();
+            produitModifie.Show();
         }
 
         private void annuler_Click(object sender, EventArgs e)
