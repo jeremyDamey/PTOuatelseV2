@@ -73,8 +73,8 @@ namespace PTOuatelse
             db.modifierProduit(var, codeProduit, codeEAN, designation, prixAchat, prixVente, tva);
             //salarieAjoute.Show();
             this.Hide();
-            ProduitAjoute produitAjoute = new ProduitAjoute();
-            produitAjoute.Show();
+            ProduitModifie produitModifie = new ProduitModifie();
+            produitModifie.Show();
         }
 
         private void annuler_Click(object sender, EventArgs e)
