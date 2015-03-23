@@ -86,7 +86,6 @@ namespace PTOuatelse
             //ModifierSalarie salarieModif = new ModifierSalarie();
             DBConect db = new DBConect();
             db.Initialize();
-            string identifiant;
 
             //DateTime dateValue;
             //dateValue = dateTimePicker1.Value;

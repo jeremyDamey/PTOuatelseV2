@@ -28,8 +28,10 @@ namespace PTOuatelse
 
         private void modifierProduit_Click(object sender, EventArgs e)
         {
-            ModifierProduit modifier = new ModifierProduit();
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            ModifierProduit modifier = new ModifierProduit(var);
             modifier.Show();
+            this.Hide();
         }
 
         private void nouveauProduit_Click(object sender, EventArgs e)
@@ -90,7 +92,7 @@ namespace PTOuatelse
 
             connection = new MySqlConnection(connectionString);
 
-            mySqlDataAdapter = new MySqlDataAdapter("select produits.id,nom,prix_achat,prix_vente,tva,code_ean from produits", connection);
+            mySqlDataAdapter = new MySqlDataAdapter("select produits.id,nom,prix_achat,prix_vente,quantite,tva,code_ean from produits inner join mouvement_stock on produits.id = produits_id", connection);
             DataSet ds = new DataSet();
             mySqlDataAdapter.Fill(ds);
             dataGridView1.DataSource = ds.Tables[0];

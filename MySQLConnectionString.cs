@@ -168,5 +168,13 @@ class DBConect
 
     }
 
+    public void modifierProduit(int var, string nom, string designation, string prix_achat, string prix_vente, string tva, string code_ean)
+    {
+        string requete = "UPDATE produits SET nom = '" + nom + "', designation = '" + designation + "', prix_vente = '" + prix_vente + "', prix_achat = '" + prix_achat + "', tva = '" + tva + "', code_ean = '" + code_ean + "' WHERE id = " + var + " ;";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+        cmd.ExecuteNonQuery();
+    }
+
 
 }

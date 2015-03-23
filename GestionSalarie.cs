@@ -34,6 +34,7 @@ namespace PTOuatelse
         {
             NouveauSalarie nouveau = new NouveauSalarie();
             nouveau.Show();
+            this.Hide();
         }
 
         private void modifierSalarie_Click(object sender, EventArgs e)
@@ -41,6 +42,7 @@ namespace PTOuatelse
             int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             ModifierSalarié modifier = new ModifierSalarié(var);
             modifier.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

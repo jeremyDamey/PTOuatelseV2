@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿ using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,6 +54,7 @@ namespace PTOuatelse
             int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             ModifierClient modifier = new ModifierClient(var);
             modifier.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
