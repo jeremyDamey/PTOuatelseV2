@@ -176,5 +176,15 @@ class DBConect
         cmd.ExecuteNonQuery();
     }
 
+    public void reapprovisionnerProduit(int var)
+    {
+        string requete = "UPDATE mouvement_stock set quantite = quantite + 1  where produits_id in (select id FROM produits where id = " + var + ");";
+
+        MySqlCommand cmd = new MySqlCommand(requete, connection);
+
+        //Execute command
+        cmd.ExecuteNonQuery();
+
+    }
 
 }

@@ -71,7 +71,8 @@ namespace PTOuatelse
             string prixVente = textBox5.Text;
             string tva = textBox6.Text;
             db.modifierProduit(var, codeProduit, codeEAN, designation, prixAchat, prixVente, tva);
-            //salarieAjoute.Show();
+            ProduitModifie produitModifie = new ProduitModifie();
+            produitModifie.Show();
             this.Hide();
         }
 

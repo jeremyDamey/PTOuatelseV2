@@ -43,7 +43,12 @@ namespace PTOuatelse
 
         private void reaprovisionnerProduit_Click(object sender, EventArgs e)
         {
-
+            int var = int.Parse(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+            Console.Write(var);
+            DBConect db = new DBConect();
+            db.Initialize();
+            db.reapprovisionnerProduit(var);
+            this.Hide();
         }
 
         private void destockerProduit_Click(object sender, EventArgs e)
