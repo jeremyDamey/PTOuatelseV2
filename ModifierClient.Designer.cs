@@ -205,6 +205,7 @@
             this.CodeClient.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clientsBindingSource, "id", true));
             this.CodeClient.Location = new System.Drawing.Point(151, 121);
             this.CodeClient.Name = "CodeClient";
+            this.CodeClient.ReadOnly = true;
             this.CodeClient.Size = new System.Drawing.Size(238, 20);
             this.CodeClient.TabIndex = 34;
             // 
