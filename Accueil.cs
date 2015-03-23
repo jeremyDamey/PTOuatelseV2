@@ -56,7 +56,8 @@ namespace WindowsFormsApplication1
 
         private void AssistanceButton_Click(object sender, EventArgs e)
         {
-
+            Assistance assistance = new Assistance();
+            assistance.Show();
         }
 
         private void ProduitBbutton_Click(object sender, EventArgs e)
